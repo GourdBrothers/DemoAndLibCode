@@ -1,0 +1,33 @@
+﻿# Generalplus IDE Solution File, Format Version 1.0.0
+# Warning: do not edit or delete this solution file!
+
+# ////////////////////////////////////////////////////
+# Begin Solution
+<Solution>
+	NAME : V1.0.0
+	GUID : {FD2C131F-20FD-488C-B43F-3884CBCB3E7E}
+	STARTUP : {B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}
+	ACTIVECONFIGURATION : Release
+</Solution>
+# End Solution
+
+# ////////////////////////////////////////////////////
+# Begin Project
+<Projects>
+	COUNT : 2
+	<Project1>
+		NAME : LIB_FOR_1186
+		GUID : {B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}
+		PATH : .\LIB_FOR_1186\LIB_FOR_1186.csuprjx
+		Dependencies : 
+	</Project1>
+	<Project2>
+		NAME : LIB_USE_1186
+		GUID : {9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}
+		PATH : .\LIB_USE_1186\LIB_USE_1186.csuprjx
+		Dependencies : 
+	</Project2>
+</Projects>
+
+# End Project
+# ////////////////////////////////////////////////////
