@@ -29,58 +29,37 @@
 	<WatchVariables>
 		<dockbar_watch1>
 			<Variable>
-				Name="Buffer0"
+				Name="INTE"
 			</Variable>
 			<Variable>
-				Name="Buffer1"
+				Name="W_CAL_ADC_H"
 			</Variable>
 			<Variable>
-				Name="Buffer2"
+				Name="W_CAL_ADC_L"
 			</Variable>
 			<Variable>
-				Name="Buffer3"
+				Name="CountH"
 			</Variable>
 			<Variable>
-				Name="Buffer4"
+				Name="CountL"
 			</Variable>
 			<Variable>
-				Name="Buffer5"
+				Name="ZeroH"
 			</Variable>
 			<Variable>
-				Name="Buffer6"
+				Name="ZeroM"
 			</Variable>
 			<Variable>
-				Name="TempRam1"
+				Name="ZeroL"
 			</Variable>
 			<Variable>
-				Name="TempRam2"
+				Name="H_DR"
 			</Variable>
 			<Variable>
-				Name="TempRam3"
+				Name="M_DR"
 			</Variable>
 			<Variable>
-				Name="TempRam4"
-			</Variable>
-			<Variable>
-				Name="TempRam5"
-			</Variable>
-			<Variable>
-				Name="TempRam6"
-			</Variable>
-			<Variable>
-				Name="TempRam11"
-			</Variable>
-			<Variable>
-				Name="TempRam12"
-			</Variable>
-			<Variable>
-				Name="TempRam13"
-			</Variable>
-			<Variable>
-				Name="reg0"
-			</Variable>
-			<Variable>
-				Name="reg1"
+				Name="L_DR"
 			</Variable>
 		</dockbar_watch1>
 	</WatchVariables>
@@ -88,16 +67,16 @@
 	</Breakpoints>
 	<OpenState>
 		<OpenFiles>
-			Path=".\\LIB_FOR_1186\\lib_adc.asm"
+			Path=".\\LIB_FOR_1186\\ScaleHandle_Weight.asm"
 			Path=".\\LIB_FOR_1186\\lib_utiliy.asm"
-			Path=".\\LIB_FOR_1186\\CSU8RP1186.inc"
 			Path=".\\LIB_FOR_1186\\RAM_DEFINE.inc"
-			Path=".\\LIB_FOR_1186\\lib_ISR.asm"
-			Path=".\\LIB_FOR_1186\\ScaleInit.asm"
-			Path=".\\LIB_FOR_1186\\lib_LCD.asm"
-			Path=".\\LIB_FOR_1186\\user_LCD.asm"
 			Path=".\\LIB_FOR_1186\\SysConfig.inc"
-			State="21,493,493"
+			Path=".\\LIB_FOR_1186\\ScaleGetZero.asm"
+			Path=".\\LIB_FOR_1186\\lib_GetCount.asm"
+			Path=".\\LIB_FOR_1186\\Sys_Main.asm"
+			Path=".\\LIB_FOR_1186\\ScaleInit.asm"
+			Path=".\\LIB_FOR_1186\\ScaleMain.ASM"
+			State="18,271,271"
 		</OpenFiles>
 		<OpenFolders>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>

@@ -38,6 +38,11 @@ SYS_MAIN_FLOW_CHK:
 
 SYS_MAIN_PowerOn:
 	INCLUDE	"Sys_PowerOn.ASM"
+;--- NEXT FLOW
+	CLRF	SysFlow
+	BSF		SysFlow,B_SysFlow_SCALE
+	CLRF	ScaleFlow
+	BSF		ScaleFlow,B_ScaleFlow_Init
 SYS_MAIN_PowerOn_END:
 	GOTO	SYS_MAIN_FLOW_END
 

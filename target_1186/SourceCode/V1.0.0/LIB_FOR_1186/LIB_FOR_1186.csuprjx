@@ -11,7 +11,7 @@
 		csChip_csInf_ID1="0x0011"
 		csChip_csEmual_CodeLastAddr="0xFFF"
 		LastBuildVersion=""
-		PrevProjectPath="G:\\Git\\DemoAndLibCode\\traget_1186\\SourceCode\\V1.0.0\\LIB_FOR_1186"
+		PrevProjectPath="G:\\Git\\DemoAndLibCode\\target_1186\\SourceCode\\V1.0.0\\LIB_FOR_1186"
 		BodyPath=".\\Body\\CSU8RP11XX\\CSU8RP1186\\ASM"
 		csChip_csInf_Type="CSU8RP1186"
 		ProjectGUID="{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}"
@@ -207,6 +207,12 @@
 			Name="USER_CODE"
 			Filter=""
 			<File>
+				FilePath=".\\user_Funs.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
 				FilePath=".\\user_ISR.asm"
 				Flags="0x000004CF"
 				<Properties>
@@ -243,13 +249,19 @@
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\ScaleHanlde_Cal.asm"
+				FilePath=".\\ScaleGetZero.asm"
 				Flags="0x000004CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\ScaleHanlde_Weight.asm"
+				FilePath=".\\ScaleHandle_Cal.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleHandle_Weight.asm"
 				Flags="0x000004CF"
 				<Properties>
 				</Properties>
@@ -280,6 +292,18 @@
 			</File>
 			<File>
 				FilePath=".\\lib_adc.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_bat.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_GetCount.asm"
 				Flags="0x000004CF"
 				<Properties>
 				</Properties>

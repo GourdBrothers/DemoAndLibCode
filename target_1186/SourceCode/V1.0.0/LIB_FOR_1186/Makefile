@@ -13,47 +13,55 @@ ECHO					= @echo //-------------------------------------------------------------
 ###################################################
 #编译选项定义处
 ###################################################
-OUTPUT_DIR            = G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\.\Release
-INTERTMP_DIR          = G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\.\Release
-PROJ_PATH			  = G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186
+OUTPUT_DIR            = G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\.\Release
+INTERTMP_DIR          = G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\.\Release
+PROJ_PATH			  = G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186
 PROJ_NAME			  = LIB_FOR_1186
 BODY_NAME			  = CSU8RP1186
 ASMFLAGS              = -no-warn -filetype=obj -arch=cscc -fill=0xffff -chip=CSU8RP1186 -mattr=c16 -BankCount=2
 LINKFLAGS             = -t asm -bt 16
 LIBMAKERFLAGS         = -chiptype 16 -debuginfo RemoveDebugInfo -encodeinfo Encryption
 CODE_OPTION			  = %%CodeOption%%
-ASM_FILES			  = "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHanlde_Cal.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHanlde_Weight.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_utiliy.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_ISR.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_LCD.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_Math.asm" \
-"G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm"
+ASM_FILES			  = "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_Funs.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleGetZero.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Cal.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Weight.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_bat.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_GetCount.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_utiliy.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_ISR.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_LCD.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_Math.asm" \
+"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm"
 
 OBJ_FILES			  = "$(INTERTMP_DIR)\Sys_Main.obj" \
 "$(INTERTMP_DIR)\Sys_PowerOn.obj" \
+"$(INTERTMP_DIR)\user_Funs.obj" \
 "$(INTERTMP_DIR)\user_ISR.obj" \
 "$(INTERTMP_DIR)\user_LCD.obj" \
 "$(INTERTMP_DIR)\ScaleDisp.obj" \
 "$(INTERTMP_DIR)\ScaleDisp_Cal.obj" \
 "$(INTERTMP_DIR)\ScaleDisp_Weight.obj" \
-"$(INTERTMP_DIR)\ScaleHanlde_Cal.obj" \
-"$(INTERTMP_DIR)\ScaleHanlde_Weight.obj" \
+"$(INTERTMP_DIR)\ScaleGetZero.obj" \
+"$(INTERTMP_DIR)\ScaleHandle_Cal.obj" \
+"$(INTERTMP_DIR)\ScaleHandle_Weight.obj" \
 "$(INTERTMP_DIR)\ScaleInit.obj" \
 "$(INTERTMP_DIR)\ScaleMain.obj" \
 "$(INTERTMP_DIR)\lib_3weightCal.obj" \
 "$(INTERTMP_DIR)\lib_adc.obj" \
+"$(INTERTMP_DIR)\lib_bat.obj" \
+"$(INTERTMP_DIR)\lib_GetCount.obj" \
 "$(INTERTMP_DIR)\lib_utiliy.obj" \
 "$(INTERTMP_DIR)\lib_ISR.obj" \
 "$(INTERTMP_DIR)\lib_LCD.obj" \
@@ -75,59 +83,71 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 ###################################################
 #.ASM文件到.OBJ文件
 ###################################################
-"$(INTERTMP_DIR)\Sys_Main.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm" -o "$(INTERTMP_DIR)\Sys_Main.obj" 
+"$(INTERTMP_DIR)\Sys_Main.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm" -o "$(INTERTMP_DIR)\Sys_Main.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\Sys_PowerOn.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm" -o "$(INTERTMP_DIR)\Sys_PowerOn.obj" 
+"$(INTERTMP_DIR)\Sys_PowerOn.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm" -o "$(INTERTMP_DIR)\Sys_PowerOn.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\user_ISR.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm" -o "$(INTERTMP_DIR)\user_ISR.obj" 
+"$(INTERTMP_DIR)\user_Funs.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_Funs.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_Funs.asm" -o "$(INTERTMP_DIR)\user_Funs.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\user_LCD.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm" -o "$(INTERTMP_DIR)\user_LCD.obj" 
+"$(INTERTMP_DIR)\user_ISR.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm" -o "$(INTERTMP_DIR)\user_ISR.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleDisp.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm" -o "$(INTERTMP_DIR)\ScaleDisp.obj" 
+"$(INTERTMP_DIR)\user_LCD.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm" -o "$(INTERTMP_DIR)\user_LCD.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleDisp_Cal.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm" -o "$(INTERTMP_DIR)\ScaleDisp_Cal.obj" 
+"$(INTERTMP_DIR)\ScaleDisp.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm" -o "$(INTERTMP_DIR)\ScaleDisp.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleDisp_Weight.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm" -o "$(INTERTMP_DIR)\ScaleDisp_Weight.obj" 
+"$(INTERTMP_DIR)\ScaleDisp_Cal.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm" -o "$(INTERTMP_DIR)\ScaleDisp_Cal.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleHanlde_Cal.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHanlde_Cal.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHanlde_Cal.asm" -o "$(INTERTMP_DIR)\ScaleHanlde_Cal.obj" 
+"$(INTERTMP_DIR)\ScaleDisp_Weight.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm" -o "$(INTERTMP_DIR)\ScaleDisp_Weight.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleHanlde_Weight.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHanlde_Weight.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHanlde_Weight.asm" -o "$(INTERTMP_DIR)\ScaleHanlde_Weight.obj" 
+"$(INTERTMP_DIR)\ScaleGetZero.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleGetZero.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleGetZero.asm" -o "$(INTERTMP_DIR)\ScaleGetZero.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleInit.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm" -o "$(INTERTMP_DIR)\ScaleInit.obj" 
+"$(INTERTMP_DIR)\ScaleHandle_Cal.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Cal.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Cal.asm" -o "$(INTERTMP_DIR)\ScaleHandle_Cal.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\ScaleMain.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm" -o "$(INTERTMP_DIR)\ScaleMain.obj" 
+"$(INTERTMP_DIR)\ScaleHandle_Weight.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Weight.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Weight.asm" -o "$(INTERTMP_DIR)\ScaleHandle_Weight.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_3weightCal.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" -o "$(INTERTMP_DIR)\lib_3weightCal.obj" 
+"$(INTERTMP_DIR)\ScaleInit.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm" -o "$(INTERTMP_DIR)\ScaleInit.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_adc.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm" -o "$(INTERTMP_DIR)\lib_adc.obj" 
+"$(INTERTMP_DIR)\ScaleMain.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm" -o "$(INTERTMP_DIR)\ScaleMain.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_utiliy.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_utiliy.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_utiliy.asm" -o "$(INTERTMP_DIR)\lib_utiliy.obj" 
+"$(INTERTMP_DIR)\lib_3weightCal.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" -o "$(INTERTMP_DIR)\lib_3weightCal.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_ISR.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_ISR.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_ISR.asm" -o "$(INTERTMP_DIR)\lib_ISR.obj" 
+"$(INTERTMP_DIR)\lib_adc.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm" -o "$(INTERTMP_DIR)\lib_adc.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_LCD.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_LCD.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_LCD.asm" -o "$(INTERTMP_DIR)\lib_LCD.obj" 
+"$(INTERTMP_DIR)\lib_bat.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_bat.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_bat.asm" -o "$(INTERTMP_DIR)\lib_bat.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_Math.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_Math.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_Math.asm" -o "$(INTERTMP_DIR)\lib_Math.obj" 
+"$(INTERTMP_DIR)\lib_GetCount.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_GetCount.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_GetCount.asm" -o "$(INTERTMP_DIR)\lib_GetCount.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_OTP_WR.obj" : "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\traget_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm" -o "$(INTERTMP_DIR)\lib_OTP_WR.obj" 
+"$(INTERTMP_DIR)\lib_utiliy.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_utiliy.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_utiliy.asm" -o "$(INTERTMP_DIR)\lib_utiliy.obj" 
+	$(ECHO)
+"$(INTERTMP_DIR)\lib_ISR.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_ISR.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_ISR.asm" -o "$(INTERTMP_DIR)\lib_ISR.obj" 
+	$(ECHO)
+"$(INTERTMP_DIR)\lib_LCD.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_LCD.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_LCD.asm" -o "$(INTERTMP_DIR)\lib_LCD.obj" 
+	$(ECHO)
+"$(INTERTMP_DIR)\lib_Math.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_Math.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_Math.asm" -o "$(INTERTMP_DIR)\lib_Math.obj" 
+	$(ECHO)
+"$(INTERTMP_DIR)\lib_OTP_WR.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm" -o "$(INTERTMP_DIR)\lib_OTP_WR.obj" 
 	$(ECHO)
 
 #main.obj :
