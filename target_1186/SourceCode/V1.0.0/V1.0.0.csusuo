@@ -29,37 +29,25 @@
 	<WatchVariables>
 		<dockbar_watch1>
 			<Variable>
-				Name="INTE"
+				Name="W_CAL_Flag"
 			</Variable>
 			<Variable>
-				Name="W_CAL_ADC_H"
+				Name="CalDot1H"
 			</Variable>
 			<Variable>
-				Name="W_CAL_ADC_L"
+				Name="CalDot1L"
 			</Variable>
 			<Variable>
-				Name="CountH"
+				Name="CalDot2H"
 			</Variable>
 			<Variable>
-				Name="CountL"
+				Name="CalDot2L"
 			</Variable>
 			<Variable>
-				Name="ZeroH"
+				Name="CalDot3H"
 			</Variable>
 			<Variable>
-				Name="ZeroM"
-			</Variable>
-			<Variable>
-				Name="ZeroL"
-			</Variable>
-			<Variable>
-				Name="H_DR"
-			</Variable>
-			<Variable>
-				Name="M_DR"
-			</Variable>
-			<Variable>
-				Name="L_DR"
+				Name="CalDot3L"
 			</Variable>
 		</dockbar_watch1>
 	</WatchVariables>
@@ -67,16 +55,16 @@
 	</Breakpoints>
 	<OpenState>
 		<OpenFiles>
+			Path=".\\LIB_FOR_1186\\lib_Math.asm"
+			Path=".\\LIB_FOR_1186\\lib_3weightCal.asm"
 			Path=".\\LIB_FOR_1186\\ScaleHandle_Weight.asm"
-			Path=".\\LIB_FOR_1186\\lib_utiliy.asm"
 			Path=".\\LIB_FOR_1186\\RAM_DEFINE.inc"
-			Path=".\\LIB_FOR_1186\\SysConfig.inc"
+			Path=".\\LIB_FOR_1186\\ScaleInit.asm"
+			Path=".\\LIB_FOR_1186\\ScaleMain.asm"
 			Path=".\\LIB_FOR_1186\\ScaleGetZero.asm"
 			Path=".\\LIB_FOR_1186\\lib_GetCount.asm"
 			Path=".\\LIB_FOR_1186\\Sys_Main.asm"
-			Path=".\\LIB_FOR_1186\\ScaleInit.asm"
-			Path=".\\LIB_FOR_1186\\ScaleMain.ASM"
-			State="18,271,271"
+			State="4,136,136"
 		</OpenFiles>
 		<OpenFolders>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
@@ -89,9 +77,6 @@
 			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 			<{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}>
 				Expanded="TRUE"
-				Name="Source Files"
-				Name="LCD Files"
-				Name="Linker Files"
 			</{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}>
 		</OpenFolders>
 	</OpenState>

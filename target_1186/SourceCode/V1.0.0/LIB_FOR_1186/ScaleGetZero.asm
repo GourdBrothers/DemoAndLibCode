@@ -19,4 +19,5 @@ ScaleGetZero_ENTRY:
 ;--- NEXT FLOW
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_WEIGHT
+	CALL	Fun_3W_CAL_Init
 ScaleGetZero_EXIT:

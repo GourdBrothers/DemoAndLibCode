@@ -4,9 +4,6 @@
 ;========================================================
 
 lib_GetCount_RAM .section BANK0
-
-	W_CAL_ADC_H DS	1
-	W_CAL_ADC_L DS	1
 	
 	CalDot1H	DS	1	; FOR Cal
 	CalDot1L	DS	1
@@ -30,22 +27,22 @@ Fun_GetCount:
 
     ;---
     	MOVFW		TempRam2		; 内码相对于零点的绝对值
-	    MOVWF       W_CAL_ADC_H
+	    MOVWF       W_CAL3_ADC_H
 	    MOVFW		TempRam3
-	    MOVWF       W_CAL_ADC_L
+	    MOVWF       W_CAL3_ADC_L
 
 	;---
 		MOVFW		CalDot1L
-		SUBWF		W_CAL_ADC_L,W
+		SUBWF		W_CAL3_ADC_L,W
 		MOVFW		CalDot1H
-		SUBWFC		W_CAL_ADC_H,W
+		SUBWFC		W_CAL3_ADC_H,W
 		BTFSS		STATUS,C
 		GOTO		GetCount1
 
 		MOVFW		CalDot2L
-		SUBWF		W_CAL_ADC_L,W
+		SUBWF		W_CAL3_ADC_L,W
 		MOVFW		CalDot2H
-		SUBWFC		W_CAL_ADC_H,W
+		SUBWFC		W_CAL3_ADC_H,W
 		BTFSS		STATUS,C
 		GOTO		GetCount2
 ;---
@@ -65,10 +62,10 @@ Fun_GetCount:
 		MOVWF		REG2
 		
 		MOVFW		CalDot2L				; 相对校正点 内码差
-		SUBWF		W_CAL_ADC_L, W
+		SUBWF		W_CAL3_ADC_L, W
 		MOVWF		TempRam6
 		MOVFW		CalDot2H
-		SUBWFC		W_CAL_ADC_H, W
+		SUBWFC		W_CAL3_ADC_H, W
 		MOVWF		TempRam5
 
 		GOTO		GetCount_COM
@@ -82,9 +79,9 @@ GetCount1:
 		MOVFW		CalDot1L
 		MOVWF		REG3
 		
-		MOVFW		W_CAL_ADC_H		; 相对校正点 内码差
+		MOVFW		W_CAL3_ADC_H		; 相对校正点 内码差
 		MOVWF		TempRam5
-		MOVFW		W_CAL_ADC_L
+		MOVFW		W_CAL3_ADC_L
 		MOVWF		TempRam6
 
 		GOTO		GetCount_COM
@@ -103,10 +100,10 @@ GetCount2:
 		MOVWF		REG2
 
 		MOVFW		CalDot1L				; 相对校正点 内码差
-		SUBWF		W_CAL_ADC_L, W	
+		SUBWF		W_CAL3_ADC_L, W	
 		MOVWF		TempRam6
 		MOVFW		CalDot1H
-		SUBWFC		W_CAL_ADC_H, W
+		SUBWFC		W_CAL3_ADC_H, W
 		MOVWF		TempRam5
 
 GetCount_COM:

@@ -27,6 +27,7 @@ ScaleInit_Ram_Zero:
 ;	CALL	Fun_RAM_Zero
 	
 ScaleInit_TIMER:
+	CALL	Fun_TIMER_init
 
 ScaleInit_LCD:
 	CALL	Fun_LCD_Init
@@ -41,19 +42,19 @@ ScaleInit_UART:
 ScaleInit_LO:
 
 ScaleInit_LoadParam:
-	MOVLW   HIGH	3000
+	MOVLW   HIGH	1603
 	MOVWF	CalDot1H
-	MOVLW   LOW		3000
+	MOVLW   LOW		1603
 	MOVWF	CalDot1L
 	
-	MOVLW   HIGH	6000
+	MOVLW   HIGH	3206
 	MOVWF	CalDot2H
-	MOVLW   LOW		6000
+	MOVLW   LOW		3206
 	MOVWF	CalDot2L
 	
-	MOVLW   HIGH	9000
+	MOVLW   HIGH	4810
 	MOVWF	CalDot3H
-	MOVLW   LOW		9000
+	MOVLW   LOW		4810
 	MOVWF	CalDot3L
 	
 ScaleInit_INT:

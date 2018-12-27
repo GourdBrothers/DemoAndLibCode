@@ -42,6 +42,10 @@ Sys_PowerOn_WDT:
 	MOVLW	WDTCON_CFG_VALUE
 	MOVWF	WDTCON
 	CLRWDT
+	
+Sys_PowerOn_Default:
+	BSF		ScaleUnit,DEFAULT_UNIT
+	
 
 Sys_PowerOn_Exit:
      

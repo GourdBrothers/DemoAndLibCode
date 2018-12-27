@@ -19,13 +19,15 @@ LCD_BIT_A   EQU   4
 LCD_BIT_B   EQU   5
 LCD_BIT_C   EQU   6
 
+LCD_BIT_P   EQU   7
+
 LCD_BIT_KG  EQU   0
 LCD_BIT_LB  EQU   1
 LCD_BIT_ST  EQU   2
 LCD_BIT_SJ  EQU   3
 
 ;*******************************************
-;**** 用户需要动手修改LCD对应显示内容的位置
+;**** 用户需要动手修改LCD对应显示内容的位置(物理显示位)
 ;*******************************************
 
 #DEFINE  Set_Num1_F     BSF    LCD1_map,LCD_BIT_F
@@ -51,6 +53,7 @@ LCD_BIT_SJ  EQU   3
 #DEFINE  Set_Num3_A     BSF    LCD3_map,LCD_BIT_A
 #DEFINE  Set_Num3_B     BSF    LCD3_map,LCD_BIT_B
 #DEFINE  Set_Num3_C     BSF    LCD3_map,LCD_BIT_C
+#DEFINE  Set_Num3_P     BSF    LCD3_map,LCD_BIT_P
 
 #DEFINE  Set_Num4_F     BSF    LCD4_map,LCD_BIT_F
 #DEFINE  Set_Num4_G     BSF    LCD4_map,LCD_BIT_G
@@ -97,6 +100,7 @@ USER_LCD_RAM	.section	BANK0
 	 B_Display3_A  EQU 3
 	 B_Display3_B  EQU 2
 	 B_Display3_C  EQU 1
+	 B_Display3_P  EQU 0
 
 	 
 	Display4	   DS  1
@@ -134,7 +138,7 @@ Fun_LCD_CommBuff:
 RETURN
 
 
-Fun_LCD_USER_SetBits:
+Fun_LCD_USER_SetBits:	; 用户不可调用
 ; Display1
     BTFSC	Display1,B_Display1_F
             Set_Num1_F
@@ -182,6 +186,8 @@ Fun_LCD_USER_SetBits:
             Set_Num3_B
     BTFSC	Display3,B_Display3_C
             Set_Num3_C
+    BTFSC	Display3,B_Display3_P        
+            Set_Num3_P
 
 ; Display4 
     BTFSC	Display4,B_Display4_F
@@ -211,4 +217,56 @@ Fun_LCD_USER_SetBits:
 Fun_LCD_USER_SetBits_END:
 	GOTO	Fun_LCD_Load_REG
 	
+Fun_LCD_USER_Num:
+	
+	MOVLW		00H
+    XORWF		TempRam2, W
+    BTFSS		STATUS, Z
+    GOTO		Fun_LCD_USER_Num_1
+    MOVLW		Disp_No
+    MOVWF		TempRam2
+
+    MOVLW		00H
+    XORWF		TempRam3, W
+    BTFSS		STATUS, Z
+    GOTO		Fun_LCD_USER_Num_1
+    MOVLW		Disp_No
+    MOVWF		TempRam3
+    
+    MOVLW		00H
+    XORWF		TempRam4, W
+    BTFSS		STATUS, Z
+    GOTO		Fun_LCD_USER_Num_1
+    MOVLW		Disp_No
+    MOVWF		TempRam4
+    
+    BTFSS		ScaleFlow,B_ScaleFlow_CAL
+    GOTO		Fun_LCD_USER_Num_1
+    
+    MOVLW		00H
+    XORWF		TempRam5, W
+    BTFSS		STATUS, Z
+    GOTO		Fun_LCD_USER_Num_1
+    MOVLW		Disp_No
+    MOVWF		TempRam5
+    
+Fun_LCD_USER_Num_1:
+    MOVFW		TempRam3
+    CALL		Table_Lcd_Num
+    IORWF		Display1,F
+
+    MOVFW		TempRam4
+    CALL		Table_Lcd_Num
+    IORWF		Display2,F
+
+    MOVFW		TempRam5
+    CALL		Table_Lcd_Num
+    IORWF		Display3,F
+
+    MOVFW		TempRam6
+    CALL		Table_Lcd_Num
+    IORWF		Display4,F
+    
+ RETURN
+ 
 .ends

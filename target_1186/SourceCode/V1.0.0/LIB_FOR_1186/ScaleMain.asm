@@ -20,6 +20,7 @@ ScaleMain_BatChk:
 ScaleMain_BatChk_END:
 
 ScaleMain_Key:
+	INCLUDE	"ScaleKey.ASM"
 ScaleMain_Key_END:
 
 ScaleMain_AutoOff:

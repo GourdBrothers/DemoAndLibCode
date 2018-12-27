@@ -10,9 +10,9 @@
     ORG        0000H
     NOP
     GOTO       SYS_RESET
-;============================================  
+;============================================
     ORG        0004H
-    GOTO       SYS_ISR_ENTRY 
+    GOTO       SYS_ISR_ENTRY
 ;============================================  
 SYS_RESET:
 
@@ -31,8 +31,10 @@ SYS_MAIN_LOOP:
 SYS_MAIN_FLOW_CHK:
 	BTFSC	SysFlow,B_SysFlow_PWR
 	GOTO    SYS_MAIN_PowerOn
+	
 	BTFSC	SysFlow,B_SysFlow_SCALE
 	GOTO	SYS_MAIN_Scale
+	
 	CLRF    SysFlow
 	BSF     SysFlow,B_SysFlow_PWR
 
