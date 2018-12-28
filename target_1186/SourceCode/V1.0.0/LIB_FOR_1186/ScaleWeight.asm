@@ -3,7 +3,7 @@
 
 Scale_Weight_ENTRY:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_AdcOk
-	GOTO	Scale_Weight_EXIT
+	GOTO	Scale_Weight_UNST
 	
 Scale_Weight_GetCount:
 	CALL	Fun_GetCount
@@ -31,11 +31,12 @@ Scale_Weight_Start:
 	BTFSS	STATUS,C
 	GOTO	Scale_Weight_Start_END
 	CALL	Fun_SetZeroPoint
+	CALL	Fun_GetAutoOnADC
 Scale_Weight_LessStart:
 	GOTO	Scale_Weight_CltCnt
 Scale_Weight_UpStart:
 	BCF		ScaleFlag1,B_ScaleFlag1_Zero
-	BSF		ScaleFlag3,B_ScaleFlag3_OnWeight
+	BSF		SysFlag1,B_SysFlag1_OnWeight
 	BTFSC	ScaleFlag1,B_ScaleFlag1_Neg
 	GOTO	Scale_Weight_CltCnt
 	BTFSS	ScaleFlag3,B_ScaleFlag3_UnlockEn
@@ -54,6 +55,7 @@ Scale_Weight_NEG:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_AdcStable
 	GOTO	Scale_Weight_NEG_END
 	CALL	Fun_SetZeroPoint
+	CALL	Fun_GetAutoOnADC
 Scale_Weight_NEG_END:
 
 Scale_Weight_MEM:
@@ -143,9 +145,6 @@ Scale_Weight_Unlock:
 	CALL	Fun_3W_CAL_ResetLock
 Scale_Weight_Unlock_END:
 
-Scale_Weight_UNST:
-Scale_Weight_UNST_END:
-
 Scale_Weight_CAL:
 	BTFSC	ScaleFlag1,B_ScaleFlag1_Zero
 	GOTO	Scale_Weight_CAL_END
@@ -155,5 +154,28 @@ Scale_Weight_CAL:
 	GOTO	Scale_Weight_CAL_END
 	CALL	Fun_3W_CAL
 Scale_Weight_CAL_END:
+
+Scale_Weight_UNST:
+	BTFSC	ScaleFlag1,B_ScaleFlag1_Lock
+	GOTO	Scale_Weight_UNST_CLR
+	BTFSC	ScaleFlag1,B_ScaleFlag1_Zero
+	GOTO	Scale_Weight_UNST_CLR
+	BTFSC	ScaleFlag1,B_ScaleFlag1_Neg
+	GOTO	Scale_Weight_UNST_CLR
+	BTFSC	ScaleFlag1,B_ScaleFlag1_oL
+	GOTO	Scale_Weight_UNST_CLR
+	BTFSC	ScaleFlag1,B_ScaleFlag1_AdcStable
+	GOTO	Scale_Weight_UNST_CLR
+	CLRF	TimerAutoOff
+	BTFSC	ScaleFlag2,B_ScaleFlag2_0s5_B
+	INCF	TimerUnst,F
+	MOVLW	60
+	SUBWF	TimerUnst,W
+	BTFSS	STATUS,C
+	GOTO	Scale_Weight_UNST_END
+	BSF		ScaleFlag2,B_ScaleFlag2_FastSleep
+Scale_Weight_UNST_CLR:
+	CLRF	TimerUnst
+Scale_Weight_UNST_END:
 
 Scale_Weight_EXIT:

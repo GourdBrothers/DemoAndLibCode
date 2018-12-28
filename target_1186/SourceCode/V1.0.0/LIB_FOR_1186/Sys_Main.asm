@@ -13,11 +13,19 @@
 ;============================================
     ORG        0004H
     GOTO       SYS_ISR_ENTRY
+    ORG        0005H
+    INCLUDE    "user_OTP_store.asm"
+    INCLUDE    "user_ISR.ASM"
 ;============================================  
 SYS_RESET:
 
+	BTFSS		STATUS,TO
+	GOTO		SYS_RESET_PWR
 SYS_RESET_WDT:
-
+	BCF			STATUS,TO
+	CLRWDT
+	GOTO		ScaleWakeUp_ScanWeight
+	
 SYS_RESET_PWR:
 
 SYS_RESET_Start:

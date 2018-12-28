@@ -174,7 +174,7 @@
 			</File>
 			<File>
 				FilePath=".\\Sys_PowerOn.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
@@ -214,13 +214,19 @@
 			</File>
 			<File>
 				FilePath=".\\user_ISR.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\user_LCD.asm"
 				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\user_OTP_store.asm"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
@@ -232,55 +238,61 @@
 			Filter=""
 			<File>
 				FilePath=".\\ScaleDisp.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\ScaleDisp_Cal.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\ScaleDisp_Weight.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\ScaleGetZero.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\ScaleHandle_Cal.asm"
-				Flags="0x000004CF"
+				FilePath=".\\ScaleCal.asm"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\ScaleHandle_Weight.asm"
-				Flags="0x000004CF"
+				FilePath=".\\ScaleWeight.asm"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\ScaleInit.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\ScaleKey.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
 				FilePath=".\\ScaleMain.asm"
-				Flags="0x000004CF"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleSleep.asm"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>

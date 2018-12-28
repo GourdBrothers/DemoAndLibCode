@@ -110,8 +110,9 @@ Fun_SetCountZero:
 	CLRF		CountL
 	BCF			ScaleFlag1,B_ScaleFlag1_Neg
 	BSF			ScaleFlag1,B_ScaleFlag1_Zero
-	BCF			ScaleFlag3,B_ScaleFlag3_OnWeight
+	BCF			SysFlag1,B_SysFlag1_OnWeight
 	BSF			ScaleFlag3,B_ScaleFlag3_UnlockEn
+	
 RETURN
 
 Fun_CurAD_Sub_ZeroAD:
@@ -128,8 +129,10 @@ Fun_CurAD_Sub_ZeroAD:
     MOVWF	    TempRam5
    	MOVFW		ZeroL
     MOVWF	    TempRam6
-    
     GOTO	    Fun_Math_Sub3_3
+    
+
+
     
 
 

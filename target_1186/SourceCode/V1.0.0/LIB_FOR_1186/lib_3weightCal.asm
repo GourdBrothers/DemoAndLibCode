@@ -141,7 +141,12 @@ Fun_3W_CAL_Third_END:
 	MOVFW	W_CAL3_ADC_L
 	MOVWF   CalDot3L
 ;--- 标记数据写入校对
-    
+	CALL    Fun_OTP_WRITE_CAL
+	CALL	Fun_OTP_READ_CAL
+	NOP
+	NOP
+	NOP
+	NOP
 ;---
 Fun_3W_CAL_Clr:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_oL

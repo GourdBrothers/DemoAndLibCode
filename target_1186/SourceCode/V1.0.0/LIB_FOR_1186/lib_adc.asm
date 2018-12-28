@@ -232,8 +232,8 @@ RETURN
 Fun_ADC_Close:
 		BCF			INTE,ADIE
 		BCF			NETC,ADEN
-		CLRF        NETF
+		BCF			NETF,ENVDDA
+		BCF			NETF,ENVB
 RETURN
 
 .ends
-

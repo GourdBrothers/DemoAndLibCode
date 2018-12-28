@@ -56,9 +56,9 @@
     DEFAULT_UNIT		EQU  B_ScaleUnit_KG
     UNIT_MAX			EQU	 08H
     
-    
 ;--- WEIGHT C IS ENABLE
     WEIGHT_C_EN			EQU	 0
+    
     
 ;--- 50KG 对应的点数,50.0KG/0.1KG   = 500 
 	COUNT_DOT			EQU	 500
@@ -66,7 +66,6 @@
 	MEM_COUNT			EQU  3
 	MAX_COUNT			EQU  1531
 	UNLOCK_COUNT		EQU  100
-	
 	TRACK_ZERO_CNT		EQU	 3
 	
 ;--- 50KG 对应的点数,50.00KG/0.05KG = 1000

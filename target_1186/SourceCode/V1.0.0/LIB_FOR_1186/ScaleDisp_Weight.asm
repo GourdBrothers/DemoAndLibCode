@@ -7,6 +7,8 @@
 * @copyright
 */
 
+;ScaleDisp_Weight_ROM	.section	rom
+
 ScaleDisp_Weight_ENTRY:
 	CLRF	TempRam4
 	MOVFW	CountH
@@ -53,6 +55,7 @@ ScaleDisp_W_Kg_END:
 	GOTO	ScaleDisp_Weight_EXIT
 
 ScaleDisp_W_Lb:
+	CALL	Fun_User_CountKgToLb
 	CLRF	TempRam11
 	MOVFW	TempRam5
 	MOVWF	TempRam12
@@ -74,6 +77,11 @@ ScaleDisp_W_St:
 	MOVWF	TempRam13
 	CALL	Fun_Math_Hex3_Bcd
 	CALL	Fun_LCD_USER_Num
+ScaleDisp_W_St_Char:
+	BSF		Display3,B_Display3_P 
+	BSF		Display5,B_Display5_ST
 ScaleDisp_W_St_END:
 
 ScaleDisp_Weight_EXIT:
+
+;.ends

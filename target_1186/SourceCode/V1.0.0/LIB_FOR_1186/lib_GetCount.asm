@@ -1,7 +1,12 @@
 ﻿
-;========================================================
-;==== lib_GetCount.ASM
-;========================================================
+/**
+* @file  lib_GetCount.ASM
+* @brief 
+* @author
+* @date     2018-12-26
+* @version  V1.0.0
+* @copyright
+*/
 
 lib_GetCount_RAM .section BANK0
 	

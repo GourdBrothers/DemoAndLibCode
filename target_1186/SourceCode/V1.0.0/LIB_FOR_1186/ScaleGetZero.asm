@@ -15,9 +15,13 @@ ScaleGetZero_ENTRY:
 	GOTO	ScaleGetZero_EXIT
 	
 	CALL    Fun_SetZeroPoint
+	CALL	Fun_GetAutoOnADC
+	CALL	Fun_User_RefreshOffTimer
+	
+	CALL	Fun_3W_CAL_Init
 	
 ;--- NEXT FLOW
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_WEIGHT
-	CALL	Fun_3W_CAL_Init
+
 ScaleGetZero_EXIT:

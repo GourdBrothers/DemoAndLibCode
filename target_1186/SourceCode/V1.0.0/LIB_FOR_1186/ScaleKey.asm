@@ -44,6 +44,7 @@ Scale_KEY_Short_UNIT:
 Scale_KEY_Short_UNIT_END:
 
 	CLRF	Key_Timer
+	CALL	Fun_User_RefreshOffTimer
 Scale_KEY_Short_END:
 	GOTO	Scale_KEY_EXIT
 

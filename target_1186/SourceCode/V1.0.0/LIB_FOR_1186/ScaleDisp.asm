@@ -7,6 +7,8 @@
 * @copyright
 */
 
+;ScaleDisp_ROM .section	rom
+
 Scale_Disp_Entry:
 	CALL	Fun_LCD_ResetAllBuf
 
@@ -54,9 +56,11 @@ Scale_Disp_Weight_END:
 
 Scale_Disp_CAL:
 Scale_Disp_CAL_END:
-	GOTO	Scale_Disp_LOAD
+;	GOTO	Scale_Disp_LOAD
 
 Scale_Disp_LOAD:
 	CALL	Fun_LCD_Load
 	
 Scale_Disp_Exit:
+
+;.ends

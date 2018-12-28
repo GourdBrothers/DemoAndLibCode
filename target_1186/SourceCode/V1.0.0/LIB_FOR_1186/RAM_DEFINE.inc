@@ -1,7 +1,7 @@
 ﻿;===================================================
 ;=== RAM_DEFINE.INC
 ;===================================================
-RAM_DEFINE_BANK0 .section BANK0,addr = 0x80
+RAM_DEFINE_BANK0 .section BANK0,addr = 0x89
 
 ;--- Global variable definition
 
@@ -21,7 +21,9 @@ ScaleUnit   DS  1
 	B_ScaleUnit_ST	EQU	2
 	
 SysFlag1	DS	1
-	B_SysFlag1_Reset	EQU	1
+	B_SysFlag1_Reset		EQU	0
+	B_SysFlag1_WakeUp		EQU	1
+	B_SysFlag1_OnWeight		EQU	2
 	
 ZeroH		DS	1
 ZeroM		DS	1
@@ -48,16 +50,21 @@ ScaleFlag2	DS	1
   B_ScaleFlag2_LockFlash	EQU 2
   B_ScaleFlag2_0s5_A		EQU 3
   B_ScaleFlag2_0s5_B		EQU 4
+  B_ScaleFlag2_FastSleep	EQU 5
+  B_ScaleFlag2_WaitSleep	EQU 6
   
 ScaleFlag3	DS	1
-  B_ScaleFlag3_OnWeight	EQU	0
   B_ScaleFlag3_UnlockEn	EQU	1
+  B_ScaleFlag3_WdtAdc	EQU	2
+  B_ScaleFlag3_TempAdc	EQU	3
   
 LockFlashTime	DS  1
 LockFlashCnt	DS  1
 KeyShortCnt		DS  1
 ZeroTrackCnt	DS  1
 Timer05sCnt		DS	1
+TimerAutoOff	DS	1
+TimerUnst		DS	1
 
   
 REG0		DS	1

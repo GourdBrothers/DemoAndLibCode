@@ -47,6 +47,7 @@ User_ISR_TM_Lock:
 	BTFSS	STATUS,C
 	GOTO	User_ISR_TM_Lock_END
 	BCF		ScaleFlag2,B_ScaleFlag2_LockFlashEN
+	CLRF	TimerAutoOff
 User_ISR_TM_Lock_END:
 
 User_ISR_TM_END:
@@ -63,4 +64,3 @@ User_ISR_URR_END:
 User_ISR_URT:
 User_ISR_URT_END:
 	GOTO	SYS_ISR_URT_EXIT
-	

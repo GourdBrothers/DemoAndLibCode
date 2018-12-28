@@ -23,19 +23,8 @@ LINKFLAGS             = -t asm -bt 16
 LIBMAKERFLAGS         = -chiptype 16 -debuginfo RemoveDebugInfo -encodeinfo Encryption
 CODE_OPTION			  = %%CodeOption%%
 ASM_FILES			  = "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_Funs.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleGetZero.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Cal.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Weight.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleKey.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_AutoOn.asm" \
@@ -50,19 +39,8 @@ ASM_FILES			  = "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_118
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_OTP_WR.asm"
 
 OBJ_FILES			  = "$(INTERTMP_DIR)\Sys_Main.obj" \
-"$(INTERTMP_DIR)\Sys_PowerOn.obj" \
 "$(INTERTMP_DIR)\user_Funs.obj" \
-"$(INTERTMP_DIR)\user_ISR.obj" \
 "$(INTERTMP_DIR)\user_LCD.obj" \
-"$(INTERTMP_DIR)\ScaleDisp.obj" \
-"$(INTERTMP_DIR)\ScaleDisp_Cal.obj" \
-"$(INTERTMP_DIR)\ScaleDisp_Weight.obj" \
-"$(INTERTMP_DIR)\ScaleGetZero.obj" \
-"$(INTERTMP_DIR)\ScaleHandle_Cal.obj" \
-"$(INTERTMP_DIR)\ScaleHandle_Weight.obj" \
-"$(INTERTMP_DIR)\ScaleInit.obj" \
-"$(INTERTMP_DIR)\ScaleKey.obj" \
-"$(INTERTMP_DIR)\ScaleMain.obj" \
 "$(INTERTMP_DIR)\lib_3weightCal.obj" \
 "$(INTERTMP_DIR)\lib_adc.obj" \
 "$(INTERTMP_DIR)\lib_AutoOn.obj" \
@@ -94,44 +72,11 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 "$(INTERTMP_DIR)\Sys_Main.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_Main.asm" -o "$(INTERTMP_DIR)\Sys_Main.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\Sys_PowerOn.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\Sys_PowerOn.asm" -o "$(INTERTMP_DIR)\Sys_PowerOn.obj" 
-	$(ECHO)
 "$(INTERTMP_DIR)\user_Funs.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_Funs.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_Funs.asm" -o "$(INTERTMP_DIR)\user_Funs.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\user_ISR.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_ISR.asm" -o "$(INTERTMP_DIR)\user_ISR.obj" 
-	$(ECHO)
 "$(INTERTMP_DIR)\user_LCD.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\user_LCD.asm" -o "$(INTERTMP_DIR)\user_LCD.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleDisp.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp.asm" -o "$(INTERTMP_DIR)\ScaleDisp.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleDisp_Cal.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Cal.asm" -o "$(INTERTMP_DIR)\ScaleDisp_Cal.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleDisp_Weight.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleDisp_Weight.asm" -o "$(INTERTMP_DIR)\ScaleDisp_Weight.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleGetZero.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleGetZero.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleGetZero.asm" -o "$(INTERTMP_DIR)\ScaleGetZero.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleHandle_Cal.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Cal.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Cal.asm" -o "$(INTERTMP_DIR)\ScaleHandle_Cal.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleHandle_Weight.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Weight.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleHandle_Weight.asm" -o "$(INTERTMP_DIR)\ScaleHandle_Weight.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleInit.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleInit.asm" -o "$(INTERTMP_DIR)\ScaleInit.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleKey.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleKey.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleKey.asm" -o "$(INTERTMP_DIR)\ScaleKey.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\ScaleMain.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\ScaleMain.asm" -o "$(INTERTMP_DIR)\ScaleMain.obj" 
 	$(ECHO)
 "$(INTERTMP_DIR)\lib_3weightCal.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" -o "$(INTERTMP_DIR)\lib_3weightCal.obj" 

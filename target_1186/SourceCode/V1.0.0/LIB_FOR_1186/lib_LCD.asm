@@ -96,13 +96,8 @@ Table_Lcd_Num:
 ;**************************************************
 Fun_LCD_Init:
 	MOVLW	NETD_CFG_VALUE
-	DW		0FFFFH
-	NOP
 	MOVWF	NETD
-;	
 	MOVLW	LCDENR_CFG_VALUE
-	DW		0FFFFH
-	NOP
 	MOVWF	LCDENR
 RETURN
 

@@ -25,6 +25,9 @@ ScaleInit_Ram_Zero:
 ;	BCF     BSR,IRP0
 ;	MOVLW	ScaleFlag1
 ;	CALL	Fun_RAM_Zero
+
+ScaleInit_LO:
+	CALL	Fun_LoCheck_Init
 	
 ScaleInit_TIMER:
 	CALL	Fun_TIMER_init
@@ -39,23 +42,28 @@ ScaleInit_ADC:
 	
 ScaleInit_UART:
 
-ScaleInit_LO:
 
 ScaleInit_LoadParam:
-	MOVLW   HIGH	1603
+
+	CALL	Fun_OTP_READ_CAL
+	BTFSS	OTP_ISP_FLAG,B_OTP_ISP_IS_NULL
+	GOTO	ScaleInit_LoadParam_END
+ScaleInit_LoadDefautCal:
+	MOVLW   HIGH	2000;1603
 	MOVWF	CalDot1H
-	MOVLW   LOW		1603
+	MOVLW   LOW		2000;1603
 	MOVWF	CalDot1L
 	
-	MOVLW   HIGH	3206
+	MOVLW   HIGH	4000;3206
 	MOVWF	CalDot2H
-	MOVLW   LOW		3206
+	MOVLW   LOW		4000;3206
 	MOVWF	CalDot2L
 	
-	MOVLW   HIGH	4810
+	MOVLW   HIGH	6000;4810
 	MOVWF	CalDot3H
-	MOVLW   LOW		4810
+	MOVLW   LOW		6000;4810
 	MOVWF	CalDot3L
+ScaleInit_LoadParam_END:
 	
 ScaleInit_INT:
 	BSF		INTE,GIE
