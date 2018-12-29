@@ -28,7 +28,6 @@ ASM_FILES			  = "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_118
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_3weightCal.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_adc.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_AutoOn.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_bat.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_GetCount.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_key.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_timer.asm" \
@@ -44,7 +43,6 @@ OBJ_FILES			  = "$(INTERTMP_DIR)\Sys_Main.obj" \
 "$(INTERTMP_DIR)\lib_3weightCal.obj" \
 "$(INTERTMP_DIR)\lib_adc.obj" \
 "$(INTERTMP_DIR)\lib_AutoOn.obj" \
-"$(INTERTMP_DIR)\lib_bat.obj" \
 "$(INTERTMP_DIR)\lib_GetCount.obj" \
 "$(INTERTMP_DIR)\lib_key.obj" \
 "$(INTERTMP_DIR)\lib_timer.obj" \
@@ -86,9 +84,6 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 	$(ECHO)
 "$(INTERTMP_DIR)\lib_AutoOn.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_AutoOn.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_AutoOn.asm" -o "$(INTERTMP_DIR)\lib_AutoOn.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\lib_bat.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_bat.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_bat.asm" -o "$(INTERTMP_DIR)\lib_bat.obj" 
 	$(ECHO)
 "$(INTERTMP_DIR)\lib_GetCount.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_GetCount.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\LIB_FOR_1186\lib_GetCount.asm" -o "$(INTERTMP_DIR)\lib_GetCount.obj" 

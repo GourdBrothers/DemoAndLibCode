@@ -153,6 +153,17 @@ Scale_Weight_CAL:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_AdcStable
 	GOTO	Scale_Weight_CAL_END
 	CALL	Fun_3W_CAL
+	BTFSS	ScaleFlag3,B_ScaleFlag3_3wCalOk	; 重量校正完成，用户需调用OTP读写函数,将校正系数存入至OTP中
+	GOTO	Scale_Weight_CAL_END
+	BCF		ScaleFlag3,B_ScaleFlag3_3wCalOk
+;	CALL    Fun_OTP_WRITE_CAL
+;	CALL	Fun_OTP_READ_CAL
+;	CLRF	TimerUnst
+	CLRF	ScaleFlow		; 流程切入至标定成功
+	BSF		ScaleFlow,B_ScaleFlow_CAL
+;	CLRF	ScaleCalFlow
+;	BSF		ScaleCalFlow,B_ScaleCalFlow_PASS
+	GOTO	ScaleCal_OTP_write
 Scale_Weight_CAL_END:
 
 Scale_Weight_UNST:

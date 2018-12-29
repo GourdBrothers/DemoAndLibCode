@@ -130,11 +130,5 @@ Fun_CurAD_Sub_ZeroAD:
    	MOVFW		ZeroL
     MOVWF	    TempRam6
     GOTO	    Fun_Math_Sub3_3
-    
-
-
-    
-
-
 
 .ends

@@ -29,55 +29,7 @@
 	<WatchVariables>
 		<dockbar_watch1>
 			<Variable>
-				Name="CountL"
-			</Variable>
-			<Variable>
-				Name="TempRam13"
-			</Variable>
-			<Variable>
-				Name="BSRBank"
-			</Variable>
-			<Variable>
-				Name="Key_Timer"
-			</Variable>
-			<Variable>
-				Name="CalDot3L"
-			</Variable>
-			<Variable>
-				Name="AutoOnWL"
-			</Variable>
-			<Variable>
-				Name="DownADH"
-			</Variable>
-			<Variable>
-				Name="AdcStableCount"
-			</Variable>
-			<Variable>
-				Name="W_CAL_Flag"
-			</Variable>
-			<Variable>
-				Name="TimerUnst"
-			</Variable>
-			<Variable>
-				Name="CalDot1H"
-			</Variable>
-			<Variable>
-				Name="CalDot1L"
-			</Variable>
-			<Variable>
-				Name="CalDot2H"
-			</Variable>
-			<Variable>
-				Name="CalDot2L"
-			</Variable>
-			<Variable>
-				Name="CalDot3H"
-			</Variable>
-			<Variable>
-				Name="CalDot3L"
-			</Variable>
-			<Variable>
-				Name="OTP_ISP_FLAG"
+				Name="INTE"
 			</Variable>
 		</dockbar_watch1>
 	</WatchVariables>
@@ -85,23 +37,21 @@
 	</Breakpoints>
 	<OpenState>
 		<OpenFiles>
-			Path=".\\LIB_FOR_1186\\lib_OTP_WR.asm"
-			Path=".\\LIB_FOR_1186\\lib_utiliy.asm"
-			Path=".\\LIB_FOR_1186\\lib_Math.asm"
-			Path=".\\LIB_FOR_1186\\ScaleInit.asm"
-			Path=".\\LIB_FOR_1186\\SysConfig.inc"
-			Path=".\\LIB_FOR_1186\\Sys_Main.asm"
-			Path=".\\LIB_FOR_1186\\ScaleMain.ASM"
+			Path=".\\LIB_FOR_1186\\ScaleMain.asm"
 			Path=".\\LIB_FOR_1186\\lib_ISR.asm"
-			Path=".\\LIB_FOR_1186\\lib_3weightCal.asm"
-			State="133,2790,2790"
+			Path=".\\LIB_FOR_1186\\RAM_DEFINE.inc"
+			Path=".\\LIB_FOR_1186\\lib_timer.asm"
+			Path=".\\LIB_FOR_1186\\ScaleWeight.asm"
+			Path=".\\LIB_FOR_1186\\lib_LCD.asm"
+			State="6,94,94"
 		</OpenFiles>
 		<OpenFolders>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 				Expanded="TRUE"
+				Name="Lib_Code"
 			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 			<{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}>
-				Expanded="TRUE"
+				Name="Source Files"
 			</{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}>
 		</OpenFolders>
 	</OpenState>

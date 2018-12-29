@@ -108,7 +108,7 @@ ISR_ADC_1:
     MOVWF		ADRamL
     
 	MOVLW       080H
-	BTFSS		ScaleFlag3,B_ScaleFlag3_TempAdc	; 温度测量时，不处理符号位
+;	BTFSS		ScaleFlag3,B_ScaleFlag3_TempAdc	; 温度测量时，不处理符号位
 	XORWF       ADRamH,F
 ;--- 重量开机ADC处理
 	BTFSS		ScaleFlag3,B_ScaleFlag3_WdtAdc

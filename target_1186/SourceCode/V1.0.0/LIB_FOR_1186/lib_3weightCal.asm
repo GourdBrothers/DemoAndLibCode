@@ -13,9 +13,8 @@ W_CAL_Flag		DS	1
     B_W_CAL_Flag_1    EQU  1
     B_W_CAL_Flag_2    EQU  2
     B_W_CAL_Flag_3    EQU  3
-    B_W_CAL_Flag_PASS EQU  4
-    B_W_CAL_Flag_TRG  EQU  5
-    B_W_CAL_Flag_LOCK EQU  6
+    B_W_CAL_Flag_LOCK EQU  4
+    B_W_CAL_Flag_PASS EQU  5
 
 .ENDS 
 
@@ -55,6 +54,7 @@ Fun_3wCal_CheckLinear:
 RETURN
 
 Fun_3W_CAL_Init:
+	BCF		ScaleFlag3,B_ScaleFlag3_3wCalOk
     CLRF	W_CAL_Flag
     BSF		W_CAL_Flag,B_W_CAL_Flag_EN
     BSF		W_CAL_Flag,B_W_CAL_Flag_1
@@ -140,13 +140,8 @@ Fun_3W_CAL_Third_END:
 	MOVWF   CalDot3H
 	MOVFW	W_CAL3_ADC_L
 	MOVWF   CalDot3L
-;--- 标记数据写入校对
-	CALL    Fun_OTP_WRITE_CAL
-	CALL	Fun_OTP_READ_CAL
-	NOP
-	NOP
-	NOP
-	NOP
+;---
+	BSF		ScaleFlag3,B_ScaleFlag3_3wCalOk
 ;---
 Fun_3W_CAL_Clr:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_oL

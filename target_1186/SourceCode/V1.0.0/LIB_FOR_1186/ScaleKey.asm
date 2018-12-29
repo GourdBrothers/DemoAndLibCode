@@ -29,10 +29,17 @@ Scale_KEY_Short:
 	BTFSC	Key_TRG,B_KEY_UNIT
 	GOTO	Scale_KEY_Short_UNIT
 	GOTO	Scale_KEY_Long
-
+	
 ;- 单位键单击
 Scale_KEY_Short_UNIT:
+	BTFSC	ScaleFlow,B_ScaleFlow_CAL
+	BSF		ScaleFlag3,B_ScaleFlag3_CalTrg
+	
+;	BTFSC	ScaleFlow,B_ScaleFlow_ZERO
 	INCF	KeyShortCnt,F
+	
+	BTFSS	ScaleFlow,B_ScaleFlow_WEIGHT
+	GOTO	Scale_KEY_Short_UNIT_END
 	BCF		STATUS,C
 	RLF		ScaleUnit,F
 	MOVLW	UNIT_MAX
@@ -72,7 +79,14 @@ Scale_KEY_Long_Unit:
 	XORWF	KeyShortCnt,W
 	BTFSS	STATUS,Z
 	GOTO	Scale_KEY_CNT_ZERO
-;--- FLOW TO 
+;--- FLOW TO CAL
+	CLRF	ScaleFlow
+	BSF		ScaleFlow,B_ScaleFlow_CAL
+	CLRF	ScaleCalFlow
+	BSF		ScaleCalFlow,B_ScaleCalFlow_ADC
+	BCF		ScaleFlag3,B_ScaleFlag3_CalTrg
+	CLRF	TimerUnst
+	CLRF	KeyShortCnt
 Scale_KEY_Long_Unit_END:
 
 Scale_KEY_Long_END:

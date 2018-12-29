@@ -22,6 +22,11 @@ ScaleMain_Timer:
 ScaleMain_Timer_END:
 
 ScaleMain_BatChk:
+	BTFSS	ScaleFlow,B_ScaleFlow_WEIGHT
+	GOTO	ScaleMain_BatChk_END
+	CALL	Fun_LoCheck
+	BTFSC	ScaleFlag3,B_ScaleFlag3_Lo
+	BSF		ScaleFlag2,B_ScaleFlag2_WaitSleep
 ScaleMain_BatChk_END:
 
 ScaleMain_Key:
@@ -29,6 +34,8 @@ ScaleMain_Key:
 ScaleMain_Key_END:
 
 ScaleMain_AutoOff:
+	BTFSS	ScaleFlow,B_ScaleFlow_WEIGHT
+	GOTO	ScaleMain_AutoOff_END
 	BTFSS	ScaleFlag2,B_ScaleFlag2_0s5_B
 	GOTO	ScaleMain_AutoOff_END
 	INCF	TimerAutoOff,F
@@ -68,6 +75,7 @@ ScaleMain_Init:
 	GOTO	ScaleMain_Init_END
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_WEIGHT
+	BSF		SysFlag1,B_SysFlag1_OnWeight
 ScaleMain_Init_END:
 	GOTO	ScaleMain_Flow_END
 
@@ -84,7 +92,7 @@ ScaleMain_Weight_END:
 ScaleMain_Cal:
 	INCLUDE "ScaleCal.ASM"
 ScaleMain_Cal_END:
-	GOTO	ScaleMain_Flow_END
+;	GOTO	ScaleMain_Flow_END
 
 ScaleMain_Flow_END:
 

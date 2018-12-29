@@ -11,14 +11,15 @@ ScaleSleep_Entry:
 
 	BTFSC	ScaleFlag2,B_ScaleFlag2_FastSleep
 	GOTO	ScaleSleep_cfg
-	BTFSS	ScaleFlag2,B_ScaleFlag2_WaitSleep
+	BTFSS	ScaleFlag2,B_ScaleFlag2_WaitSleep 
 	GOTO	ScaleSleep_Exit
 
 ScaleSleep_wait:
 	CLRF	Timer05sCnt
-	BSF		ScaleFlag2,B_ScaleFlag2_0s5_A
+	BCF		ScaleFlag2,B_ScaleFlag2_0s5_A
 	CLRF	REG0
 ScaleSleep_wait_loop:
+	CLRWDT
 	HALT
 	NOP
 	BTFSC	ScaleFlag2,B_ScaleFlag2_0s5_A
@@ -27,6 +28,7 @@ ScaleSleep_wait_loop:
 	SUBWF	REG0,W
 	BTFSS	STATUS,C
 	GOTO	ScaleSleep_wait_loop
+	CLRF	ScaleFlag2
 ScaleSleep_wait_end:
 
 ScaleSleep_cfg:

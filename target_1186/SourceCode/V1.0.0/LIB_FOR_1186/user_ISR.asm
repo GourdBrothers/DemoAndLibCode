@@ -17,6 +17,7 @@ User_ISR_INT1_END:
 	
 User_ISR_TM:
 	BSF		ScaleFlag2,B_ScaleFlag2_Key_T
+	BSF		ScaleFlag2,B_ScaleFlag2_BatChk_T
 	
 User_ISR_TM_0s5:	
 	INCF	Timer05sCnt,F
@@ -38,7 +39,7 @@ User_ISR_TM_Lock:
 	SUBWF	LockFlashTime,W
 	BTFSS	STATUS,C
 	GOTO	User_ISR_TM_Lock_END
-	MOVLW	00000100B
+	MOVLW	00001000B
 	XORWF	ScaleFlag2,F
 	CLRF	LockFlashTime
 	INCF	LockFlashCnt,F

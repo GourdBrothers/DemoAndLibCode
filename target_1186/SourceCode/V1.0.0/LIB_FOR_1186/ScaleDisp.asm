@@ -11,6 +11,16 @@
 
 Scale_Disp_Entry:
 	CALL	Fun_LCD_ResetAllBuf
+	
+Scale_Disp_LowBat:	
+	BTFSS	ScaleFlag3,B_ScaleFlag3_Lo
+	GOTO	Scale_Disp_LowBat_END
+	MOVLW	LcdchL
+	MOVWF	Display2
+	MOVLW	Lcdcho
+	MOVWF	Display3
+	GOTO	Scale_Disp_LOAD
+Scale_Disp_LowBat_END:
 
 Scale_Disp_FLOW:
 	BTFSC	ScaleFlow,B_ScaleFlow_ZERO
@@ -55,6 +65,7 @@ Scale_Disp_Weight_END:
 	GOTO	Scale_Disp_LOAD
 
 Scale_Disp_CAL:
+	INCLUDE "ScaleDisp_Cal.ASM"
 Scale_Disp_CAL_END:
 ;	GOTO	Scale_Disp_LOAD
 

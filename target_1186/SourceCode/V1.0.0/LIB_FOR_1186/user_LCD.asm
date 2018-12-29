@@ -124,7 +124,7 @@ USER_LCD_RAM	.section	BANK0
 
 XCWK_Math_ROM .section rom
 
-Fun_LCD_SetAllBuf:	
+Fun_LCD_SetAllBuf:
     MOVLW    0FFH
     GOTO     Fun_LCD_CommBuff
 Fun_LCD_ResetAllBuf:
