@@ -2,8 +2,9 @@
 ;---- SysConfig.inc
 ;---------------------------------------------
 
-;--- sfr REG DEFINE
-
+;*********************************************
+;**** 芯片特殊功能寄存器设定
+;*********************************************
 ;--- io 
 	AIENB_CFG_VALUE		EQU  00001000B
 	PT1EN_CFG_VALUE		EQU  00000000B
@@ -51,8 +52,12 @@
     UART_EN             EQU  0
 	SCON1_CFG_VALUE		EQU  0
 	SCON2_CFG_VALUE		EQU  0
+
 	
-;--- default unit
+;*********************************************
+;**** 程序功能模块对应的参数定义
+;*********************************************
+;--- 上电默认单位
     DEFAULT_UNIT		EQU  B_ScaleUnit_KG
     UNIT_MAX			EQU	 08H
     
@@ -75,17 +80,31 @@
 ;	MAX_COUNT			EQU  3062
 ;	UNLOCK_COUNT		EQU  200
 
-;--- CAL threshold
+;--- ADC 滤波系数
+	PRO_ADC_WINDOWN		EQU  20
+	PRO_ADC_STABLE_RANG	EQU  5
+	PRO_ADC_STABLE_TIME	EQU  5
+	
+;--- 重量开机参数设定(按点计算)
+	WEIGHT_ON_MODE			EQU	0
+	WEIGHT_ON_CONT_FAST		EQU	43  ;4.3kg/0.1kg=43
+	WEIGHT_ON_CONT_SLOW		EQU	47	;4.7kg/0.1kg=47
+	WEIGHT_DOWN_CONT		EQU	21	;2.1kg/0.1kg=21
+	WEIGHT_ON_FAST_UP_CNT	EQU	5
+	WEIGHT_ON_SLOW_UP_CNT	EQU	5
+	WEIGHT_DOWN_CNT			EQU	3
+	
+
+;--- 标定时，第一标定点通过的ADC变化量阀值
 	CALDOT1_ADC_THRESHOLD	EQU		500
 
-;--- KEY
-
+;--- KEY,有效按键位定义,最多支持8个独立按键
 	KEY_USED_BITS		EQU		00000001B
 		B_KEY_UNIT		EQU		0
 		
 	KEY_UNIT_PORT		EQU		PT2
 	KEY_UNIT_PIN		EQU     0
 	
-	KEY_LONG_TIME       EQU		34	;	33*30MS 
+	KEY_LONG_TIME       EQU		34	;	33*30MS
 
 

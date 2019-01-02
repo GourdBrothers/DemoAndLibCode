@@ -81,7 +81,6 @@ Timer05sCnt		DS	1
 TimerAutoOff	DS	1
 TimerUnst		DS	1
 
-  
 REG0			DS	1
 REG1			DS	1
 REG2			DS	1

@@ -32,53 +32,16 @@ lib_Auto_ROM .section rom
 
 Fun_ScanWeihgt:
 
-
-
-
-Fun_ScanWeihgtCfg:
-	BCF		NETC,ADEN
-	
-	MOVLW	NETE_CFG_VALUE
-	MOVWF	NETE
-	
-	MOVLW	NETF_CFG_VALUE
-    MOVWF	NETF
-    
-	MOVLW	00000001B   ; 64X,250K,/128=1.953KHZ
-	MOVWF	ADCON
-	
-	BCF		NETE,ENLB
-	
-
-	MOVLW	50
-	MOVWF	REG0
-Fun_ScanWeihgtCfg_NOPS1:
-	DECFSZ	REG0 ,F
-	GOTO	Fun_ScanWeihgtCfg_NOPS1
-	
-	MOVLW	00000110B
-	MOVWF	NETC
-	
-	MOVLW	10
-	MOVWF	REG0
-Fun_ScanWeihgtCfg_NOPS2:
-	DECFSZ	REG0 ,F
-	GOTO	Fun_ScanWeihgtCfg_NOPS2
-	
-	CLRF	INTE
-	BSF		INTE, ADIE
-	BSF		INTE, GIE
+	CALL    Fun_ScanWeihgtCfg_First
 	
 	CLRF	ScaleFlag1
 	BSF		ScaleFlag1,B_ScaleFlag1_AdcStart
 	CLRF	AdcSampleTimes
 	BSF		ScaleFlag3,B_ScaleFlag3_WdtAdc
-Fun_ScanWeihgtCfg_END:
 
-
-	MOVLW	05H
+	MOVLW	WEIGHT_ON_FAST_UP_CNT
 	MOVWF	REG0
-	MOVLW	03H
+	MOVLW	WEIGHT_DOWN_CNT
 	MOVWF	REG1
 	CLRF	REG2
 
@@ -131,14 +94,13 @@ Fun_ScanWeihgt_up:
 	
 ; check second adc
 Fun_ScanWeihgt_Second:
-	MOVLW   00000011B
-    MOVWF   ADCON
+	CALL	Fun_ScanWeihgtCfg_Second
     
     CLRF	ScaleFlag1
 	BSF		ScaleFlag1,B_ScaleFlag1_AdcStart
 	CLRF	AdcSampleTimes
 	
-	MOVLW	05H
+	MOVLW	WEIGHT_ON_SLOW_UP_CNT
 	MOVWF	REG0
 Fun_ScanWeihgt_Second_LOOP:
 	CLRWDT
@@ -162,14 +124,13 @@ Fun_ScanWeihgt_Second_LOOP:
 
 	BCF		INTE,ADIE
 	BCF		INTE,GIE
-	;BCF		NETC,ADEN
 Fun_ScanWeihgt_ON:
 	BSF		SysFlag1,B_SysFlag1_WakeUp
 	GOTO	Fun_ScanWeihgt_END
 	
 Fun_ScanWeihgt_SLEEP:
 	BCF		SysFlag1,B_SysFlag1_WakeUp
-	GOTO	Fun_ScanWeihgt_END
+;	GOTO	Fun_ScanWeihgt_END
 
 Fun_ScanWeihgt_END:
 RETURN
@@ -179,7 +140,7 @@ Fun_GetAutoOnADC_Second:
     BCF         BSR  , IRP0
     MOVLW		AutoOnWH
     MOVWF       FSR0
-    MOVLW       47
+    MOVLW       WEIGHT_ON_CONT_SLOW
     GOTO        Fun_GetWeight_ADC
     
 ; 下秤重量对应内码计算
@@ -187,7 +148,7 @@ Fun_GetAutoDownADC:
     BCF         BSR , IRP0
     MOVLW		DownADH
     MOVWF       FSR0 
-    MOVLW       21
+    MOVLW       WEIGHT_DOWN_CONT
     GOTO        Fun_GetWeight_ADC
 
 ; 第一点开机重量对应内码计算
@@ -195,7 +156,7 @@ Fun_GetAutoOnADC_First:
     BCF         BSR,IRP0
     MOVLW		AutoOnADH
     MOVWF       FSR0
-    MOVLW       43
+    MOVLW       WEIGHT_ON_CONT_FAST
 	
 Fun_GetWeight_ADC:
     MOVWF       TempRam13

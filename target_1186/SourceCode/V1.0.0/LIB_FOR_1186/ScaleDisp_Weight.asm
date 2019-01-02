@@ -70,15 +70,70 @@ ScaleDisp_W_Lb_END:
 	GOTO	ScaleDisp_Weight_EXIT
 
 ScaleDisp_W_St:
+	CALL	Fun_User_CountKgToLb
+	CLRF	TempRam1
+	CLRF	TempRam2
+	CLRF	TempRam3
+	CLRF	TempRam11
+	CLRF	TempRam12
+	MOVLW	140
+	MOVWF	TempRam13
+	CALL	Fun_Math_Div6_3
+	MOVFW	TempRam2
+	MOVWF	REG0
+	MOVFW	TempRam3
+	MOVWF	REG1
+
 	CLRF	TempRam11
 	MOVFW	TempRam5
 	MOVWF	TempRam12
 	MOVFW	TempRam6
 	MOVWF	TempRam13
 	CALL	Fun_Math_Hex3_Bcd
-	CALL	Fun_LCD_USER_Num
+	
+    MOVLW	00H
+    XORWF	TempRam5,W
+    BTFSS	STATUS,Z
+    GOTO	ScaleDisp_W_St0
+    MOVLW	Disp_No
+    MOVWF	TempRam5
+    
+ScaleDisp_W_St0:
+	MOVFW	TempRam5
+    CALL	Table_Lcd_Num
+    IORWF	Display1,F
+
+    MOVFW	TempRam6
+    CALL	Table_Lcd_Num
+    IORWF	Display2,F
+    
+ScaleDisp_W_St_lb:
+	CLRF	TempRam11
+	MOVFW	REG0
+	MOVWF	TempRam12
+	MOVFW	REG1
+	MOVWF	TempRam13
+	CALL	Fun_Math_Hex3_Bcd
+	
+	MOVLW	00H
+    XORWF	TempRam4,W
+    BTFSS	STATUS,Z
+    GOTO	ScaleDisp_W_St_lb0
+    MOVLW	Disp_No
+    MOVWF	TempRam4
+    
+ScaleDisp_W_St_lb0:	
+	
+	MOVFW	TempRam4
+    CALL	Table_Lcd_Num
+    IORWF	Display3,F
+
+    MOVFW	TempRam5
+    CALL	Table_Lcd_Num
+    IORWF	Display4,F
+	
 ScaleDisp_W_St_Char:
-	BSF		Display3,B_Display3_P 
+	BSF		Display2,B_Display2_COL  
 	BSF		Display5,B_Display5_ST
 ScaleDisp_W_St_END:
 

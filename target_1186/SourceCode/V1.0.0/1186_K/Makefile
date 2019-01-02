@@ -13,20 +13,18 @@ ECHO					= @echo //-------------------------------------------------------------
 ###################################################
 #编译选项定义处
 ###################################################
-OUTPUT_DIR            = E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\.\Release
-INTERTMP_DIR          = E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\.\Release
-PROJ_PATH			  = E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186
-PROJ_NAME			  = LIB_USE_1186
+OUTPUT_DIR            = G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\.\Release
+INTERTMP_DIR          = G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\.\Release
+PROJ_PATH			  = G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K
+PROJ_NAME			  = 1186_K
 BODY_NAME			  = CSU8RP1186
 ASMFLAGS              = -filetype=obj -arch=cscc -fill=0xffff -chip=CSU8RP1186 -mattr=c16 -BankCount=2
 LINKFLAGS             = -t asm -bt 16
 LIBMAKERFLAGS         = -chiptype 16 -debuginfo RemoveDebugInfo -encodeinfo Encryption
 CODE_OPTION			  = %%CodeOption%%
-ASM_FILES			  = "E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\LIB_USE_1186.asm" \
-"E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\POWER_ON.asm"
+ASM_FILES			  = "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\1186_K.asm"
 
-OBJ_FILES			  = "$(INTERTMP_DIR)\LIB_USE_1186.obj" \
-"$(INTERTMP_DIR)\POWER_ON.obj"
+OBJ_FILES			  = "$(INTERTMP_DIR)\1186_K.obj"
 
 OUTPUT_FILE_TYPE	  = binfile
 OUTPUT_FILE_EXTENSION = hex
@@ -43,11 +41,8 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 ###################################################
 #.ASM文件到.OBJ文件
 ###################################################
-"$(INTERTMP_DIR)\LIB_USE_1186.obj" : "E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\LIB_USE_1186.asm"
-	$(ASM) $(ASMFLAGS) -gstab "E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\LIB_USE_1186.asm" -o "$(INTERTMP_DIR)\LIB_USE_1186.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\POWER_ON.obj" : "E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\POWER_ON.asm"
-	$(ASM) $(ASMFLAGS) -gstab "E:\XCWK_CS_LIB\源码版本\V1.0.0\LIB_USE_1186\POWER_ON.asm" -o "$(INTERTMP_DIR)\POWER_ON.obj" 
+"$(INTERTMP_DIR)\1186_K.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\1186_K.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\1186_K.asm" -o "$(INTERTMP_DIR)\1186_K.obj" 
 	$(ECHO)
 
 #main.obj :

@@ -41,7 +41,7 @@
 		csChip_csEmual_CopFirstAddr="0x1000"
 		BodySeries="CSU8RP11XX"
 		csChip_csEmual_MBPBitField="14"
-		Name="LIB_FOR_1186"
+		Name="1186_H"
 		csChip_csEmual_LCDLastAddr="0x4D"
 		csChip_csEmual_MaxBPNum="6"
 		csChip_csEmual_SfrFirstAddr="0x000"
@@ -333,37 +333,31 @@
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\lib_timer.asm"
-				Flags="0x000004CF"
-				<Properties>
-				</Properties>
-			</File>
-			<File>
-				FilePath=".\\lib_utiliy.asm"
-				Flags="0x000004CF"
-				<Properties>
-				</Properties>
-			</File>
-			<File>
-				FilePath=".\\lib_ISR.asm"
-				Flags="0x000004CF"
-				<Properties>
-				</Properties>
-			</File>
-			<File>
-				FilePath=".\\lib_LCD.asm"
-				Flags="0x000004CF"
-				<Properties>
-				</Properties>
-			</File>
-			<File>
 				FilePath=".\\lib_Math.asm"
 				Flags="0x000004CF"
 				<Properties>
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\lib_OTP_WR.asm"
+				FilePath=".\\lib_1186_utiliy.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_ISR.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_LCD.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_OTP_WR.asm"
 				Flags="0x000004CF"
 				<Properties>
 				</Properties>

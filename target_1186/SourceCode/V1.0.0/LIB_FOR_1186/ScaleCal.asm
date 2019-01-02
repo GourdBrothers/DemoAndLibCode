@@ -154,7 +154,7 @@ ScaleCal_PASS:
 ;
 	CLRF	TimerUnst
 	CALL	Fun_GetAutoOnADC
-	CALL	Fun_ADC_ProStart
+	CALL	Fun_ProcAdcStart
 	CALL	Fun_User_RefreshOffTimer
 	CLRF	ScaleFlag2
 	CLRF	ScaleFlag3

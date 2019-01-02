@@ -68,6 +68,8 @@ AdcStableCount  ds		1
 lib_adc_pro_ROM .section rom
 
 Fun_ProcAdc:
+		DW          0FFFFH
+		NOP
 		lib_adc_MOVFF		TempRam1,H_DR
 		lib_adc_MOVFF		TempRam2,M_DR
 		lib_adc_MOVFF		TempRam3,L_DR
@@ -79,8 +81,7 @@ Fun_ProcAdc:
 
 		CLRF		TempRam4
 		CLRF		TempRam5
-		MOVLW       20
-		DW          0FFFFH
+		MOVLW       PRO_ADC_WINDOWN
 		DW          0FFFFH
 		NOP
 		MOVWF		TempRam6
@@ -186,7 +187,7 @@ Proc_Adc2:
 
 		CLRF		TempRam4
 		CLRF		TempRam5
-		MOVLW       005H
+		MOVLW       PRO_ADC_STABLE_RANG
 		DW          0FFFFH
 		NOP
 		MOVWF       TempRam6
@@ -195,7 +196,7 @@ Proc_Adc2:
 		GOTO		Proc_Adc_UnStable
 		
 		INCF		AdcStableCount, F
-		MOVLW       004H
+		MOVLW       PRO_ADC_STABLE_TIME
 		DW          0FFFFH
 		NOP
 		SUBWF		AdcStableCount, W
@@ -211,29 +212,46 @@ Proc_Adc_UnStable:
 ProcAdc_End:
 RETURN
 
-Fun_ADC_Init:
-    	MOVLW		11100000B
-    	MOVWF		TEMPC
-    	MOVLW		00000000B   ;AI0,AI1->ADC
-    	MOVWF		NETA
-    	MOVLW		00000111B   ;250K,/8192
-    	MOVWF		ADCON
-    	MOVLW		00000110B   ;64X,AD_EN=1
-    	MOVWF		NETC
-    	BSF			INTE,ADIE
-    	
-Fun_ADC_ProStart:
-		CLRF		AdcStableCount
-		CLRF        ScaleFlag1
-		BSF		    ScaleFlag1,B_ScaleFlag1_AdcStart
-		CLRF		AdcSampleTimes
+	
+Fun_ProcAdcStart:
+	CLRF		AdcStableCount
+	CLRF		ScaleFlag1
+	BSF			ScaleFlag1,B_ScaleFlag1_AdcStart
+	CLRF		AdcSampleTimes
 RETURN
 
-Fun_ADC_Close:
-		BCF			INTE,ADIE
-		BCF			NETC,ADEN
-		BCF			NETF,ENVDDA
-		BCF			NETF,ENVB
+
+Fun_SetZeroPoint:
+	MOVFW		H_DR
+    MOVWF		ZeroH
+    MOVFW		M_DR
+    MOVWF		ZeroM
+    MOVFW		L_DR
+    MOVWF		ZeroL
+    
+Fun_SetCountZero:
+	CLRF		CountH
+	CLRF		CountL
+	BCF			ScaleFlag1,B_ScaleFlag1_Neg
+	BSF			ScaleFlag1,B_ScaleFlag1_Zero
+	BCF			SysFlag1,B_SysFlag1_OnWeight
+	BSF			ScaleFlag3,B_ScaleFlag3_UnlockEn
 RETURN
+
+Fun_CurAD_Sub_ZeroAD:
+	MOVFW		H_DR
+	MOVWF	    TempRam1
+	MOVFW		M_DR
+    MOVWF	    TempRam2
+    MOVFW		L_DR
+    MOVWF	    TempRam3
+    
+    MOVFW		ZeroH
+    MOVWF	    TempRam4
+    MOVFW		ZeroM
+    MOVWF	    TempRam5
+   	MOVFW		ZeroL
+    MOVWF	    TempRam6
+    GOTO	    Fun_Math_Sub3_3
 
 .ends

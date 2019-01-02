@@ -22,9 +22,9 @@
 		Dependencies : 
 	</Project1>
 	<Project2>
-		NAME : LIB_USE_1186
-		GUID : {9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}
-		PATH : .\LIB_USE_1186\LIB_USE_1186.csuprjx
+		NAME : 1186_K
+		GUID : {17A4C4C1-869E-4DEB-B777-B628F54C237A}
+		PATH : .\1186_K\1186_K.csuprjx
 		Dependencies : 
 	</Project2>
 </Projects>

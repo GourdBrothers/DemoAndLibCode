@@ -11,10 +11,10 @@
 		csChip_csInf_ID1="0x0011"
 		csChip_csEmual_CodeLastAddr="0xFFF"
 		LastBuildVersion=""
-		PrevProjectPath="E:\\XCWK_CS_LIB\\源码版本\\V1.0.0\\LIB_USE_1186"
+		PrevProjectPath="G:\\Git\\DemoAndLibCode\\target_1186\\SourceCode\\V1.0.0\\1186_K"
 		BodyPath=".\\Body\\CSU8RP11XX\\CSU8RP1186\\ASM"
 		csChip_csInf_Type="CSU8RP1186"
-		ProjectGUID="{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}"
+		ProjectGUID="{17A4C4C1-869E-4DEB-B777-B628F54C237A}"
 		CLSID="{3B98E13A-995A-488E-A751-FE322C27ED80}"
 		csChip_csInf_Verision="1.0"
 		tools_bin_csu8ice="BIN/csu8dcom.exe"
@@ -41,7 +41,7 @@
 		csChip_csEmual_CopFirstAddr="0x1000"
 		BodySeries="CSU8RP11XX"
 		csChip_csEmual_MBPBitField="14"
-		Name="LIB_USE_1186"
+		Name="1186_K"
 		csChip_csEmual_LCDLastAddr="0x4D"
 		csChip_csEmual_MaxBPNum="6"
 		csChip_csEmual_SfrFirstAddr="0x000"
@@ -53,8 +53,8 @@
 		Version="5.2.0"
 		csChip_csEmual_LCDFirstAddr="0x40"
 		csChip_csEmual_LCDEN="1"
-		ProjectMainFile="LIB_USE_1186.asm"
-		GUID="{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}"
+		ProjectMainFile="1186_K.asm"
+		GUID="{17A4C4C1-869E-4DEB-B777-B628F54C237A}"
 		tools_bin_rbf="1186.rbf"
 	</Properties>
 	<Configurations>
@@ -62,7 +62,7 @@
 			Name="Release"
 			OutputDirectory=".\\Release"
 			IntermediateDirectory=".\\Release"
-			OutputFileName=".\\Release\\LIB_USE_1186.hex"
+			OutputFileName=".\\Release\\1186_K.hex"
 			ExcludedFromBuild="FALSE"
 			OverwriteMakeFile="FALSE"
 			MakeFileName="Makefile"
@@ -95,19 +95,11 @@
 				<Assembler>
 					Options="-filetype=obj -arch=cscc"
 					IncludePaths=""
-					GenerateDebugInfoFile="TRUE"
 				</Assembler>
 				<Linker>
 					Options=""
 					FillValue="0xffff"
 					StartUpCode="$(StartUpCode)"
-					SpecifyOffset="0x0000"
-					<Libraries>
-						<Library>
-							FileName=".\\XCWK_lib_math_v10.lib"
-							Use="TRUE"
-						</Library>
-					</Libraries>
 				</Linker>
 				<Debugger>
 					<LCD Simulator>
@@ -122,8 +114,8 @@
 						DISPLAY="1"
 					</LCD Simulator>
 					<BuleTooth>
-						BuleTooth_FillData="0"
-						BuleTooth_FillMacAddress="0"
+						BuleTooth_FillData=""
+						BuleTooth_FillMacAddress=""
 						BuleTooth_MacAddress=""
 					</BuleTooth>
 				</Debugger>
@@ -161,13 +153,7 @@
 			Name="Source Files"
 			Filter="asm"
 			<File>
-				FilePath=".\\LIB_USE_1186.asm"
-				Flags="0x000004CF"
-				<Properties>
-				</Properties>
-			</File>
-			<File>
-				FilePath=".\\POWER_ON.asm"
+				FilePath=".\\1186_K.asm"
 				Flags="0x000004CF"
 				<Properties>
 				</Properties>
@@ -179,7 +165,7 @@
 			Name="LCD Files"
 			Filter="lcd"
 			<File>
-				FilePath=".\\LIB_USE_1186.lcd"
+				FilePath=".\\1186_K.lcd"
 				<Properties>
 				</Properties>
 			</File>

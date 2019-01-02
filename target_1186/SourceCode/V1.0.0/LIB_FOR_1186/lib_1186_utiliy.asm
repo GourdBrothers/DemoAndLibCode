@@ -84,6 +84,37 @@ Fun_GPIO_Init:
 	MOVWF	AIENB2
 RETURN
 
+Fun_ADC_Init:
+	MOVLW		11100000B
+	MOVWF		TEMPC
+	MOVLW		00000000B   ;AI0,AI1->ADC
+	MOVWF		NETA
+	MOVLW		00000111B   ;250K,/8192
+	MOVWF		ADCON
+	MOVLW		00000110B   ;64X,AD_EN=1
+	MOVWF		NETC
+	BSF			INTE,ADIE
+	GOTO		Fun_ProcAdcStart
+    	
+Fun_ADC_Close:
+	BCF			INTE,ADIE
+	BCF			NETC,ADEN
+	BCF			NETF,ENVDDA
+	BCF			NETF,ENVB
+RETURN
+
+Fun_TIMER_init:
+	MOVLW		TMCON_CFG_VALUE
+	MOVWF		TMCON
+	BSF			INTE,TMIE
+RETURN
+
+Fun_TIMER_close:
+	BCF			INTE,TMIE
+	BCF			TMCON,TMEN
+RETURN
+
+
 Fun_RAM_Zero:
 	MOVWF	FSR0
 Fun_RAM_Zero_Loop:
@@ -98,37 +129,46 @@ Fun_RAM_Zero_Loop:
 	CLRF	INDF0
 RETURN
 
-Fun_SetZeroPoint:
-	MOVFW		H_DR
-    MOVWF		ZeroH
-    MOVFW		M_DR
-    MOVWF		ZeroM
-    MOVFW		L_DR
-    MOVWF		ZeroL
-Fun_SetCountZero:
-	CLRF		CountH
-	CLRF		CountL
-	BCF			ScaleFlag1,B_ScaleFlag1_Neg
-	BSF			ScaleFlag1,B_ScaleFlag1_Zero
-	BCF			SysFlag1,B_SysFlag1_OnWeight
-	BSF			ScaleFlag3,B_ScaleFlag3_UnlockEn
+
+; 重量开机快速扫描ADC配置
+Fun_ScanWeihgtCfg_First:
+	BCF		NETC,ADEN
 	
+	MOVLW	NETE_CFG_VALUE
+	MOVWF	NETE
+
+	MOVLW	NETF_CFG_VALUE
+    MOVWF	NETF
+    
+	MOVLW	00000001B   ; 64X,250K,/128=1.953KHZ
+	MOVWF	ADCON
+	
+	BCF		NETE,ENLB
+	
+	MOVLW	50
+	MOVWF	REG0
+Fun_ScanWeihgtCfg_NOPS1:
+	DECFSZ	REG0 ,F
+	GOTO	Fun_ScanWeihgtCfg_NOPS1
+	
+	MOVLW	00000110B
+	MOVWF	NETC
+	
+	MOVLW	10
+	MOVWF	REG0
+Fun_ScanWeihgtCfg_NOPS2:
+	DECFSZ	REG0 ,F
+	GOTO	Fun_ScanWeihgtCfg_NOPS2
+	
+	CLRF	INTE
+	BSF		INTE, ADIE
+	BSF		INTE, GIE
 RETURN
 
-Fun_CurAD_Sub_ZeroAD:
-	MOVFW		H_DR
-	MOVWF	    TempRam1
-	MOVFW		M_DR
-    MOVWF	    TempRam2
-    MOVFW		L_DR
-    MOVWF	    TempRam3
-    
-    MOVFW		ZeroH
-    MOVWF	    TempRam4
-    MOVFW		ZeroM
-    MOVWF	    TempRam5
-   	MOVFW		ZeroL
-    MOVWF	    TempRam6
-    GOTO	    Fun_Math_Sub3_3
+; 重量开机慢速扫描ADC配置
+Fun_ScanWeihgtCfg_Second:
+	MOVLW   00000011B
+    MOVWF   ADCON
+RETURN
 
 .ends

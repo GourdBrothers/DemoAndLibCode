@@ -37,22 +37,28 @@
 	</Breakpoints>
 	<OpenState>
 		<OpenFiles>
-			Path=".\\LIB_FOR_1186\\ScaleMain.asm"
-			Path=".\\LIB_FOR_1186\\lib_ISR.asm"
+			Path=".\\LIB_FOR_1186\\ScaleDisp_Weight.asm"
+			Path=".\\LIB_FOR_1186\\user_Funs.asm"
+			Path=".\\LIB_FOR_1186\\user_LCD.asm"
+			Path=".\\1186_K\\1186_K.asm"
 			Path=".\\LIB_FOR_1186\\RAM_DEFINE.inc"
-			Path=".\\LIB_FOR_1186\\lib_timer.asm"
-			Path=".\\LIB_FOR_1186\\ScaleWeight.asm"
-			Path=".\\LIB_FOR_1186\\lib_LCD.asm"
-			State="6,94,94"
+			Path=".\\LIB_FOR_1186\\LIB_FOR_1186.lcd"
+			Path=".\\LIB_FOR_1186\\ScaleMain.ASM"
+			Path=".\\LIB_FOR_1186\\Sys_Main.asm"
+			State="18,581,581"
 		</OpenFiles>
 		<OpenFolders>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 				Expanded="TRUE"
+				Name="Header Files"
+				Name="APP Files"
+				Name="LCD Files"
+				Name="USER_CODE"
+				Name="ScaleModule"
 				Name="Lib_Code"
 			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
-			<{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}>
-				Name="Source Files"
-			</{9F0D9223-7FF1-4C56-A7D7-3F511F3DE1D2}>
+			<{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
+			</{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
 		</OpenFolders>
 	</OpenState>
 </UserOptions>

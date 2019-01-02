@@ -20,6 +20,7 @@ LCD_BIT_B   EQU   5
 LCD_BIT_C   EQU   6
 
 LCD_BIT_P   EQU   7
+LCD_BIT_COL EQU	  7
 
 LCD_BIT_KG  EQU   0
 LCD_BIT_LB  EQU   1
@@ -45,6 +46,7 @@ LCD_BIT_SJ  EQU   3
 #DEFINE  Set_Num2_A     BSF    LCD2_map,LCD_BIT_A
 #DEFINE  Set_Num2_B     BSF    LCD2_map,LCD_BIT_B
 #DEFINE  Set_Num2_C     BSF    LCD2_map,LCD_BIT_C
+#DEFINE  Set_Num2_COL   BSF    LCD2_map,LCD_BIT_COL
 
 #DEFINE  Set_Num3_F     BSF    LCD3_map,LCD_BIT_F
 #DEFINE  Set_Num3_G     BSF    LCD3_map,LCD_BIT_G
@@ -90,6 +92,7 @@ USER_LCD_RAM	.section	BANK0
 	 B_Display2_A  EQU 3
 	 B_Display2_B  EQU 2
 	 B_Display2_C  EQU 1
+	 B_Display2_COL  EQU 0
 
 	 
 	Display3	   DS  1
@@ -170,6 +173,8 @@ Fun_LCD_USER_SetBits:	; 用户不可调用
             Set_Num2_B
     BTFSC	Display2,B_Display2_C
             Set_Num2_C
+    BTFSC	Display2,B_Display2_COL     
+            Set_Num2_COL
 
 ; Display3    
     BTFSC	Display3,B_Display3_F
