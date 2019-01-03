@@ -1,0 +1,20 @@
+version:Mon Aug 08 15:27:53 2016
+
+bodyname:"CSU18MB86"
+bodyseries:"CSU18MBXX"
+bodyconfig:"C:\Program Files (x86)\Chipsea\CSU-IDE V5.3.0\chipsea\project\body\CSU18MBXX\CSU18MB86\ChipInfo.conf"
+options:Fill 0xffff
+codeoption:"0x2080:0x0003;"
+codeoffset:"0"
+codesize:"0x1FFF"
+limitcodesize:"0x1FFF"
+appendcodesize:"0x000"
+bankcount:"3"
+input:"G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_bat.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_key.obj","G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj"
+library:
+temppath:"G:/Git/DemoAndLibCode/target_18xx/18xx_H/Release\"
+outputbin:"G:/Git/DemoAndLibCode/target_18xx/18xx_H/Release\18xx_H.hex"
+;example begin
+;locate: CSCC_SECTION_1 at 0x80
+;locate: CSCC_SECTION_2 after CSCC_INIT_1
+;example end

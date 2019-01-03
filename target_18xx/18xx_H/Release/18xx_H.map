@@ -1,0 +1,522 @@
+Thursday, January 03, 17:27:16, 2019
+
+                    CSLinker - Version 1.0.0.0
+                    -------------------------------------------------------------
+
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Global Symbol Name              Type             Bank             Value              Size                Filename
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+CSCC_INT_FUNCTION_ADDRESS        ROM              ---              0000
+CSCC_BANK0_INIT_TAB_START        ROM              ---              0000
+CSCC_BANK0_INIT_TAB_SIZE         ROM              ---              0000
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Local Symbol Name               Type             Bank             Value              Size                Filename
+
+BatLowCnt                        RAM               0               009A              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+CountH                           RAM               0               00A2              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+CountL                           RAM               0               00A3              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+KeyShortCnt                      RAM               0               0098              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+LockCountH                       RAM               0               0091              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+LockCountL                       RAM               0               0092              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+LockFlashCnt                     RAM               0               0097              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+LockFlashTime                    RAM               0               0096              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+REG0                             RAM               0               009E              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+REG1                             RAM               0               009F              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+REG2                             RAM               0               00A0              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+REG3                             RAM               0               00A1              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_FLOW_CHK                ROM              ---              0030              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_FLOW_END                ROM              ---              02C9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_LOOP                    ROM              ---              002F              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_PowerOn                 ROM              ---              0036              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_PowerOn_END             ROM              ---              004D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_Scale                   ROM              ---              004E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_MAIN_Scale_END               ROM              ---              02C9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_RESET                        ROM              ---              0029              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_RESET_PWR                    ROM              ---              002E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_RESET_Start                  ROM              ---              002E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SYS_RESET_WDT                    ROM              ---              002B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCalFlow                     RAM               0               008B              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_ADC                     ROM              ---              0181              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_ADC_END                 ROM              ---              0187              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_DOT1                    ROM              ---              0193              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_DOT1_END                ROM              ---              01A4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_DOT2                    ROM              ---              01A5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_DOT2_END                ROM              ---              01B4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_DOT3                    ROM              ---              01B5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_DOT3_END                ROM              ---              01C4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_ERR                     ROM              ---              01E4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_Entry                   ROM              ---              016F              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_Err                     ROM              ---              01CB              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_Exit                    ROM              ---              01E4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_FlowChk                 ROM              ---              0171              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_OK                      ROM              ---              01C7              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_OTP_write               ROM              ---              01C5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_PASS                    ROM              ---              01CF              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_PASS_END                ROM              ---              01E3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_Timer                   ROM              ---              016F              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_Timer_END               ROM              ---              0171              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_ZERO                    ROM              ---              0188              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleCal_ZERO_END                ROM              ---              0192              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_ADC                ROM              ---              026C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_ADC_END            ROM              ---              0274              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT1               ROM              ---              027C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT1_END           ROM              ---              0281              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT2               ROM              ---              0282              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT2_END           ROM              ---              0288              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT3               ROM              ---              0289              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT3_END           ROM              ---              0290              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_DOT_Comm           ROM              ---              0290              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_ERR                ROM              ---              029B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_ERR_END            ROM              ---              02A2              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_Entry              ROM              ---              025E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_Exit               ROM              ---              02A2              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_PASS               ROM              ---              0293              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_PASS_END           ROM              ---              029A              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_ZERO               ROM              ---              0275              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Cal_ZERO_END           ROM              ---              027B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W                      ROM              ---              020F              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_Kg                   ROM              ---              0215              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_Kg_Char              ROM              ---              021C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_Kg_END               ROM              ---              021E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_LOCK                 ROM              ---              020B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_Lb                   ROM              ---              021F              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_Lb_Char              ROM              ---              0227              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_Lb_END               ROM              ---              0229              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_St                   ROM              ---              022A              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_St0                  ROM              ---              0243              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_St_Char              ROM              ---              025B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_St_END               ROM              ---              025D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_St_lb                ROM              ---              0249              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_W_St_lb0               ROM              ---              0255              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Weight_ENTRY           ROM              ---              0200              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleDisp_Weight_EXIT            ROM              ---              025D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleFlag1                       RAM               0               0093              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleFlag2                       RAM               0               0094              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleFlag3                       RAM               0               0095              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleFlow                        RAM               0               008A              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleGetZero_ENTRY               ROM              ---              00CF              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleGetZero_EXIT                ROM              ---              00DF              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_ADC                    ROM              ---              00B7              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_Entry                  ROM              ---              00AB              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_INT                    ROM              ---              00C4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_IO                     ROM              ---              00AC              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_LCD                    ROM              ---              00B4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_LO                     ROM              ---              00B2              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_LoadDefautCal          ROM              ---              00B8              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_LoadParam              ROM              ---              00B8              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_LoadParam_END          ROM              ---              00C4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_Power                  ROM              ---              00AD              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_Ram_Zero               ROM              ---              00AF              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_TIMER                  ROM              ---              00B3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleInit_UART                   ROM              ---              00B8              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_ADC                    ROM              ---              009D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_ADC_END                ROM              ---              00A3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_AutoOff                ROM              ---              0093              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_AutoOff_END            ROM              ---              009D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_BatChk                 ROM              ---              0057              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_BatChk_END             ROM              ---              005C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Cal                    ROM              ---              016F              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Cal_END                ROM              ---              01E4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Display                ROM              ---              01E4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Display_END            ROM              ---              02A3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Entry                  ROM              ---              004E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Flow_Chk               ROM              ---              00A3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Flow_END               ROM              ---              01E4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Init                   ROM              ---              00AB              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Init_END               ROM              ---              00CE              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Key                    ROM              ---              005C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Key_END                ROM              ---              0093              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Timer                  ROM              ---              0052              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Timer_END              ROM              ---              0057              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Weight                 ROM              ---              00E0              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Weight_END             ROM              ---              016E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Zero                   ROM              ---              00CF              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_Zero_END               ROM              ---              00DF              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_powerSave              ROM              ---              02A3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleMain_powerSave_END          ROM              ---              02C9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_Entry                 ROM              ---              02A3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_Exit                  ROM              ---              02C9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_cfg                   ROM              ---              02B4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_cfgADC                ROM              ---              02B9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_cfgInt                ROM              ---              02BB              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_done                  ROM              ---              02BE              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_wait                  ROM              ---              02A7              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_wait_end              ROM              ---              02B4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleSleep_wait_loop             ROM              ---              02AA              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleUnit                        RAM               0               008C              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleWakeUp_Done                 ROM              ---              02C6              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleWakeUp_INT                  ROM              ---              02C0              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ScaleWakeUp_ScanWeight           ROM              ---              02C3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_CAL                   ROM              ---              025E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_CAL_END               ROM              ---              02A2              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_Entry                 ROM              ---              01E4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_Exit                  ROM              ---              02A3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_FLOW                  ROM              ---              01EC              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_LOAD                  ROM              ---              02A2              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_LowBat                ROM              ---              01E5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_LowBat_END            ROM              ---              01EC              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_NEG                 ROM              ---              01F5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_NEG_END             ROM              ---              01F9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_Normal              ROM              ---              0200              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_Unst                ROM              ---              01F5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_Unst_END            ROM              ---              01F5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_oL                  ROM              ---              01F9              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_W_oL_END              ROM              ---              0200              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_Weight                ROM              ---              01F5              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_Weight_END            ROM              ---              025D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_Zero                  ROM              ---              01F3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Disp_Zero_END              ROM              ---              01F4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_CNT_ZERO               ROM              ---              0092              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_ENTRY                  ROM              ---              005C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_EXIT                   ROM              ---              0093              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Long                   ROM              ---              0076              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Long_END               ROM              ---              008D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Long_Unit              ROM              ---              0082              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Long_Unit_END          ROM              ---              008D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Release                ROM              ---              008E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Release_END            ROM              ---              0093              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Short                  ROM              ---              0062              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Short_END              ROM              ---              0075              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Short_UNIT             ROM              ---              0065              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_KEY_Short_UNIT_END         ROM              ---              0073              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_CAL                 ROM              ---              014E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_CAL_END             ROM              ---              015B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_CltCnt              ROM              ---              00FC              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_ENTRY               ROM              ---              00E0              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_EXIT                ROM              ---              016E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_GetCount            ROM              ---              00E2              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_LOCK                ROM              ---              0129              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_LOCK_END            ROM              ---              013C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_LessStart           ROM              ---              00F3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_MAX                 ROM              ---              011D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_MAX_END             ROM              ---              0129              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_MEM                 ROM              ---              0103              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_MEM_END             ROM              ---              011D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_NEG                 ROM              ---              00FD              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_NEG_END             ROM              ---              0103              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_Start               ROM              ---              00E3              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_Start_END           ROM              ---              00FD              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_UNST                ROM              ---              015B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_UNST_CLR            ROM              ---              016D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_UNST_END            ROM              ---              016E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_Unlock              ROM              ---              013C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_Unlock_END          ROM              ---              014E              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Scale_Weight_UpStart             ROM              ---              00F4              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SysFlag1                         RAM               0               008D              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+SysFlow                          RAM               0               0089              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_ClrBank0             ROM              ---              003D              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_ClrBank0_Loop        ROM              ---              0040              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_ClrBank1             ROM              ---              0040              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_ClrBank1_Loop        ROM              ---              0043              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_Default              ROM              ---              0048              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_Entry                ROM              ---              0036              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_Exit                 ROM              ---              0049              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_INIT_CLK             ROM              ---              0038              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_IO                   ROM              ---              003C              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Sys_PowerOn_WDT                  ROM              ---              0043              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Timer05sCnt                      RAM               0               009B              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+TimerAutoOff                     RAM               0               009C              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+TimerUnst                        RAM               0               009D              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_ADC                     ROM              ---              0026              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_ADC0_END                ROM              ---              0026              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_INT0                    ROM              ---              0005              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_INT0_END                ROM              ---              0007              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_INT1                    ROM              ---              0008              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_INT1_END                ROM              ---              0008              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_TM0                     ROM              ---              0009              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_TM_0s5                  ROM              ---              000B              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_TM_0s5_END              ROM              ---              0012              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_TM_END                  ROM              ---              0025              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_TM_Lock                 ROM              ---              0012              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_TM_Lock_END             ROM              ---              0025              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_URR                     ROM              ---              0027              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_URR_END                 ROM              ---              0027              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_URT                     ROM              ---              0028              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+User_ISR_URT_END                 ROM              ---              0028              02C6                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ZeroH                            RAM               0               008E              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ZeroL                            RAM               0               0090              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ZeroM                            RAM               0               008F              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+ZeroTrackCnt                     RAM               0               0099              001B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\Sys_Main.obj
+Fun_LoCheck                      ROM              ---              02F8              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_0                    ROM              ---              02FD              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_1                    ROM              ---              0307              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_Close                ROM              ---              02F6              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_Done                 ROM              ---              0305              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_END                  ROM              ---              030F              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_Init                 ROM              ---              02F3              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_LoCheck_clr                  ROM              ---              030E              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_User_CalDotZero              ROM              ---              02DC              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_User_CalDotZeroUp            ROM              ---              02F1              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_User_CalDotZero_END          ROM              ---              02F2              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_User_CountKgToLb             ROM              ---              02CA              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_User_RefreshOffTimer         ROM              ---              02D7              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Fun_user_KeyGetGPIO              ROM              ---              0310              004B                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_Funs.obj
+Display1                         RAM               0               00A4              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Display2                         RAM               0               00A5              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Display3                         RAM               0               00A6              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Display4                         RAM               0               00A7              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Display5                         RAM               0               00A8              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_CommBuff                 ROM              ---              0318              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_ResetAllBuf              ROM              ---              0317              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_SetAllBuf                ROM              ---              0315              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_USER_Num                 ROM              ---              0361              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_USER_Num_1               ROM              ---              037B              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_USER_SetBits             ROM              ---              031E              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+Fun_LCD_USER_SetBits_END         ROM              ---              0360              0073                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\user_LCD.obj
+BSRBank                          RAM               0               00AD              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+Fsr0Bank                         RAM               0               00AB              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+Fsr1Bank                         RAM               0               00AC              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC                          ROM              ---              03B3              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_1                        ROM              ---              03C4              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_2                        ROM              ---              03D7              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_3                        ROM              ---              03F7              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_DIS3                     ROM              ---              03B7              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_END                      ROM              ---              03F8              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_Shfit                    ROM              ---              03E4              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_Shfit_LOOP               ROM              ---              03E6              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_WDT                      ROM              ---              03CE              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+ISR_ADC_WDT_LOOP                 ROM              ---              03D0              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_ADC                      ROM              ---              03B2              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_ADC_EXIT                 ROM              ---              03F8              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_ENTRY                    ROM              ---              0388              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_ENTRY_EXIT               ROM              ---              039F              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_INT0                     ROM              ---              03A9              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_INT0_EXIT                ROM              ---              03AB              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_INT1                     ROM              ---              03AC              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_INT1_EXIT                ROM              ---              03AE              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_SourceCHK                ROM              ---              0391              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_TM0                      ROM              ---              03AF              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_TM0_EXIT                 ROM              ---              03B1              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_URR                      ROM              ---              03F9              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_URR_EXIT                 ROM              ---              03FA              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_URT                      ROM              ---              03FB              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+SYS_ISR_URT_EXIT                 ROM              ---              03FC              0075                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+StatusBank                       RAM               0               00AA              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+WorkRegBank                      RAM               0               00A9              0005                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_ISR.obj
+Fun_LCD_Close                    ROM              ---              040A              0017                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj
+Fun_LCD_Init                     ROM              ---              0409              0017                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj
+Fun_LCD_Load                     ROM              ---              040B              0017                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj
+Fun_LCD_Load_REG                 ROM              ---              0413              0017                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj
+Fun_LCD_Load_SetBits             ROM              ---              0412              0017                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj
+Table_Lcd_Num                    ROM              ---              03FD              0017                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_LCD.obj
+Fun_ADC_Close                    ROM              ---              043F              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_ADC_Init                     ROM              ---              0435              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_1                      ROM              ---              0426              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_100MS                  ROM              ---              0414              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_10MS                   ROM              ---              041A              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_1MS                    ROM              ---              041C              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_2                      ROM              ---              041E              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_20MS                   ROM              ---              0418              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_2_LOOP                 ROM              ---              0420              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_40MS                   ROM              ---              0416              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_Delay_MS_comm                ROM              ---              041D              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_GPIO_Init                    ROM              ---              0434              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_RAM_Zero                     ROM              ---              0442              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_RAM_Zero_Loop                ROM              ---              0443              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_ScanWeihgtCfg_First          ROM              ---              044D              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_ScanWeihgtCfg_NOPS1          ROM              ---              0457              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_ScanWeihgtCfg_NOPS2          ROM              ---              045D              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_ScanWeihgtCfg_Second         ROM              ---              0463              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_TIMER_close                  ROM              ---              0441              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_TIMER_init                   ROM              ---              0440              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_power_Close                  ROM              ---              0432              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_power_Init                   ROM              ---              0429              0052                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_18xx_utiliy.obj
+Fun_3W_CAL                       ROM              ---              0490              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Clr                   ROM              ---              04CC              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Disable               ROM              ---              048A              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Exit                  ROM              ---              04CE              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_First                 ROM              ---              049C              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_First_END             ROM              ---              04A9              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Init                  ROM              ---              0485              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_ResetLock             ROM              ---              048D              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Second                ROM              ---              04AA              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Second_END            ROM              ---              04B7              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Third                 ROM              ---              04B8              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3W_CAL_Third_END             ROM              ---              04BF              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+Fun_3wCal_CheckLinear            ROM              ---              0466              0069                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL1_ADC_H                     RAM               0               00AE              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL1_ADC_L                     RAM               0               00AF              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL2_ADC_H                     RAM               0               00B0              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL2_ADC_L                     RAM               0               00B1              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL3_ADC_H                     RAM               0               00B2              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL3_ADC_L                     RAM               0               00B3              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+W_CAL_Flag                       RAM               0               00B4              0007                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_3weightCal.obj
+ADRamH                           RAM               0               00C7              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+ADRamL                           RAM               0               00C9              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+ADRamM                           RAM               0               00C8              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AD_Temp0                         RAM               0               00CA              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AD_Temp1                         RAM               0               00CB              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AD_Temp2                         RAM               0               00CC              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AD_Temp3                         RAM               0               00CD              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AdcCount                         RAM               0               00CE              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AdcSampleTimes                   RAM               0               00CF              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AdcStableCount                   RAM               0               00D0              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Fun_CurAD_Sub_ZeroAD             ROM              ---              0560              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Fun_ProcAdc                      ROM              ---              04CF              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Fun_ProcAdcStart                 ROM              ---              054E              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Fun_SetCountZero                 ROM              ---              0559              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Fun_SetZeroPoint                 ROM              ---              0553              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+H_DATA                           RAM               0               00BB              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+H_DATAA                          RAM               0               00BE              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+H_DATAB                          RAM               0               00C1              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+H_DATAC                          RAM               0               00C4              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+H_DR                             RAM               0               00B5              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+H_DRBuf                          RAM               0               00B8              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+L_DATA                           RAM               0               00BD              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+L_DATAA                          RAM               0               00C0              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+L_DATAB                          RAM               0               00C3              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+L_DATAC                          RAM               0               00C6              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+L_DR                             RAM               0               00B7              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+L_DRBuf                          RAM               0               00BA              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+M_DATA                           RAM               0               00BC              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+M_DATAA                          RAM               0               00BF              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+M_DATAB                          RAM               0               00C2              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+M_DATAC                          RAM               0               00C5              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+M_DR                             RAM               0               00B6              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+M_DRBuf                          RAM               0               00B9              001C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+ProcAdc_End                      ROM              ---              054D              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Proc_Adc1                        ROM              ---              0518              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Proc_Adc2                        ROM              ---              0527              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+Proc_Adc_UnStable                ROM              ---              054B              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+_ProcAdc0                        ROM              ---              04E8              009E                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_adc.obj
+AutoOnADH                        RAM               0               0083              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+AutoOnADL                        RAM               0               0085              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+AutoOnADM                        RAM               0               0084              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+AutoOnWH                         RAM               0               0086              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+AutoOnWL                         RAM               0               0088              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+AutoOnWM                         RAM               0               0087              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+DownADH                          RAM               0               0080              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+DownADL                          RAM               0               0082              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+DownADM                          RAM               0               0081              0009                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_GetAutoDownADC               ROM              ---              05BC              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_GetAutoOnADC                 ROM              ---              05E3              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_GetAutoOnADC_First           ROM              ---              05C1              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_GetAutoOnADC_Second          ROM              ---              05B7              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_GetWeight_ADC                ROM              ---              05C5              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt                   ROM              ---              056D              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_END               ROM              ---              05B6              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_LOOP              ROM              ---              0577              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_ON                ROM              ---              05B3              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_SLEEP             ROM              ---              05B5              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_Second            ROM              ---              059D              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_Second_LOOP       ROM              ---              05A3              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_down              ROM              ---              0585              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_downCnt           ROM              ---              0590              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+Fun_ScanWeihgt_up                ROM              ---              0596              007A                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_AutoOn.obj
+CalDot1H                         RAM               0               00D1              0006                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+CalDot1L                         RAM               0               00D2              0006                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+CalDot2H                         RAM               0               00D3              0006                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+CalDot2L                         RAM               0               00D4              0006                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+CalDot3H                         RAM               0               00D5              0006                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+CalDot3L                         RAM               0               00D6              0006                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+Fun_GetCount                     ROM              ---              05E7              0059                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+GetCount1                        ROM              ---              0610              0059                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+GetCount2                        ROM              ---              061B              0059                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+GetCount_COM                     ROM              ---              062B              0059                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+GetCount_End                     ROM              ---              063F              0059                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_GetCount.obj
+Fun_key_Scan                     ROM              ---              0640              000C                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_key.obj
+Key_HOLD                         RAM               0               00D9              0004                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_key.obj
+Key_IO_PRESS                     RAM               0               00D7              0004                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_key.obj
+Key_TRG                          RAM               0               00D8              0004                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_key.obj
+Key_Timer                        RAM               0               00DA              0004                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_key.obj
+Buffer0                          RAM               0               00DB              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Buffer1                          RAM               0               00DC              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Buffer2                          RAM               0               00DD              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Buffer3                          RAM               0               00DE              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Buffer4                          RAM               0               00DF              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Buffer5                          RAM               0               00E0              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Buffer6                          RAM               0               00E1              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Add2_2                  ROM              ---              064C              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_AdjustBcd               ROM              ---              0740              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Div6_3                  ROM              ---              0672              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Div6_3Loop              ROM              ---              0674              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Div6_3Loop1             ROM              ---              068D              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Div6_3_Rounded          ROM              ---              0690              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Hex3_Bcd                ROM              ---              06D6              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_HexToBcdAdjustDec       ROM              ---              0721              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_HexToBcd_Loop           ROM              ---              06DE              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Mul3_3                  ROM              ---              06A9              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Mul3_3Loop              ROM              ---              06BA              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Mul3_3Loop1             ROM              ---              06CC              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_SpliteBcd               ROM              ---              06EA              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Sub2_2                  ROM              ---              0651              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Sub2_2_Neg              ROM              ---              0656              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Sub3_3                  ROM              ---              065F              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+Fun_Math_Sub3_3_Neg              ROM              ---              0666              00FD                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam1                         RAM               0               00E2              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam11                        RAM               0               00E8              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam12                        RAM               0               00E9              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam13                        RAM               0               00EA              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam2                         RAM               0               00E3              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam3                         RAM               0               00E4              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam4                         RAM               0               00E5              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam5                         RAM               0               00E6              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+TempRam6                         RAM               0               00E7              0010                G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\lib_Math.obj
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*                                                 R A M   S E C T I O N    M A P                                                                                                                                                                                                                                                                                                                                                                                                                                  *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*    Section Name              Bank Number         Startting Address   Ending Address      Size      File Name                                                                                                                                                                                                                                                                                                                                                                                                    *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*    lib_Auto_RAM                  0                    0080              0088             0009      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_AUTOON.OBJ                                                                                                                                                                                                                                                                                                                                              *
+*    RAM_DEFINE_BANK0              0                    0089              00A3             001B      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\SYS_MAIN.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*    USER_LCD_RAM                  0                    00A4              00A8             0005      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\USER_LCD.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*    lib_ISR_RAM                   0                    00A9              00AD             0005      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_18XX_ISR.OBJ                                                                                                                                                                                                                                                                                                                                            *
+*    lib_3W_CAL_RAM                0                    00AE              00B4             0007      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_3WEIGHTCAL.OBJ                                                                                                                                                                                                                                                                                                                                          *
+*    lib_adc_pro_RAM               0                    00B5              00D0             001C      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_ADC.OBJ                                                                                                                                                                                                                                                                                                                                                 *
+*    lib_GetCount_RAM              0                    00D1              00D6             0006      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_GETCOUNT.OBJ                                                                                                                                                                                                                                                                                                                                            *
+*    lib_key_RAM                   0                    00D7              00DA             0004      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_KEY.OBJ                                                                                                                                                                                                                                                                                                                                                 *
+*    XCWK_Math_RAM                 0                    00DB              00EA             0010      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_MATH.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*                                                 R O M   S E C T I O N    M A P                                                                                                                                                                                                                                                                                                                                                                                                                                  *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*    Section Name              Bank Number         Startting Address   Ending Address      Size      File Name                                                                                                                                                                                                                                                                                                                                                                                                    *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*    orgsec_0000                   ----                 0000              0001             0002      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\SYS_MAIN.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*    orgsec_0008                   ----                 0004              02C9             02C6      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\SYS_MAIN.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*    user_Funs_rom                 ----                 02CA              0314             004B      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\USER_FUNS.OBJ                                                                                                                                                                                                                                                                                                                                               *
+*    XCWK_Math_ROM                 ----                 0315              0387             0073      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\USER_LCD.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*    lib_ISR_ROM                   ----                 0388              03FC             0075      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_18XX_ISR.OBJ                                                                                                                                                                                                                                                                                                                                            *
+*    XCWK_LCD_ROM                  ----                 03FD              0413             0017      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_18XX_LCD.OBJ                                                                                                                                                                                                                                                                                                                                            *
+*    lib_Delay_rom                 ----                 0414              0465             0052      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_18XX_UTILIY.OBJ                                                                                                                                                                                                                                                                                                                                         *
+*    lib_3W_CAL_ROM                ----                 0466              04CE             0069      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_3WEIGHTCAL.OBJ                                                                                                                                                                                                                                                                                                                                          *
+*    lib_adc_pro_ROM               ----                 04CF              056C             009E      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_ADC.OBJ                                                                                                                                                                                                                                                                                                                                                 *
+*    lib_Auto_ROM                  ----                 056D              05E6             007A      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_AUTOON.OBJ                                                                                                                                                                                                                                                                                                                                              *
+*    lib_GetCount_ROM              ----                 05E7              063F             0059      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_GETCOUNT.OBJ                                                                                                                                                                                                                                                                                                                                            *
+*    lib_key_ROM                   ----                 0640              064B             000C      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_KEY.OBJ                                                                                                                                                                                                                                                                                                                                                 *
+*    XCWK_Math_ROM                 ----                 064C              0748             00FD      G:\GIT\DEMOANDLIBCODE\TARGET_18XX\18XX_H\RELEASE\LIB_MATH.OBJ                                                                                                                                                                                                                                                                                                                                                *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+                   Linker Output Filename :
+                   Disk  Mapping Filename : G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\18xx_H.map
+                   Symbol  Table FileName : G:\Git\DemoAndLibCode\target_18xx\18xx_H\Release\18xx_H.sbms
+
+                   Linker Warnings : 0
+                   Linker Errors   : 0
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Stack function list:
+Overlay function list:
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*                                                 M E M O R Y    S T A T I S T I C S                                                                                                                                                                                                                                                                                                                                                                                                                              *
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+		Total ROM    =  8192 [0x2000] words
+		Total RAM    =   488 [0x01E8] bytes
+		ROM   Used   =  1863 [0x0747] words (22.7%)
+		RAM   Used   =   107 [0x006B] bytes (21.9%)
+		Free  ROM    =  6329 [0x18B9] words (77.3%)
+		Free  RAM    =   381 [0x017D] bytes (78.1%)
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+BANK              Used Size                     Total Size
+  0            107 [0x06B] bytes             128 [0x080] bytes
+  1              0 [0x000] bytes             256 [0x100] bytes
+  2              0 [0x000] bytes             104 [0x068] bytes

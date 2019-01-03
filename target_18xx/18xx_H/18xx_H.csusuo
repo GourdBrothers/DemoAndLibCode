@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserOptions>
+	<OpenState>
+		<OpenFiles>
+			Path=".\\lib_18xx_LCD.asm"
+			State="48,1698,1903"
+		</OpenFiles>
+		<OpenFolders>
+			<{7FA97F09-9D87-489E-B35D-73E5CF4D8F9E}>
+				Expanded="TRUE"
+				Name="Header Files"
+				Name="APP Files"
+				Name="user_code Files"
+				Name="ScaleModule Files "
+				Name="lib_Code Files"
+			</{7FA97F09-9D87-489E-B35D-73E5CF4D8F9E}>
+		</OpenFolders>
+	</OpenState>
+</UserOptions>

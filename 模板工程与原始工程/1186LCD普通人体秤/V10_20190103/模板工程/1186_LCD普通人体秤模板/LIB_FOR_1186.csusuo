@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <UserOptions>
+	<OpenState>
+		<OpenFiles>
+		</OpenFiles>
+		<OpenFolders>
+			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
+				Expanded="TRUE"
+			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
+		</OpenFolders>
+	</OpenState>
 	<UI_dockbar_disassembler>
 		AddressList=""
 	</UI_dockbar_disassembler>
@@ -26,28 +35,4 @@
 	<UI_dockbar_registers>
 		ActiveRegGroup="SFR"
 	</UI_dockbar_registers>
-	<WatchVariables>
-		<dockbar_watch1>
-			<Variable>
-				Name="INTE"
-			</Variable>
-		</dockbar_watch1>
-	</WatchVariables>
-	<Breakpoints>
-	</Breakpoints>
-	<OpenState>
-		<OpenFiles>
-			Path=".\\1186_H\\Sys_Main.asm"
-			State="9,298,452"
-		</OpenFiles>
-		<OpenFolders>
-			<{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
-			</{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
-			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
-				Expanded="TRUE"
-				Name="APP Files"
-				Name="ScaleModule"
-			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
-		</OpenFolders>
-	</OpenState>
 </UserOptions>

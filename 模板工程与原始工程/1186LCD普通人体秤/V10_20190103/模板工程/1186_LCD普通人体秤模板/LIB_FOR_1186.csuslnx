@@ -4,8 +4,8 @@
 # ////////////////////////////////////////////////////
 # Begin Solution
 <Solution>
-	NAME : V1.0.0
-	GUID : {FD2C131F-20FD-488C-B43F-3884CBCB3E7E}
+	NAME : LIB_FOR_1186
+	GUID : {6E19046A-6CF8-403D-B17F-19E786488E40}
 	STARTUP : {B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}
 	ACTIVECONFIGURATION : Release
 </Solution>
@@ -14,19 +14,13 @@
 # ////////////////////////////////////////////////////
 # Begin Project
 <Projects>
-	COUNT : 2
+	COUNT : 1
 	<Project1>
-		NAME : 1186_K
-		GUID : {17A4C4C1-869E-4DEB-B777-B628F54C237A}
-		PATH : .\1186_K\1186_K.csuprjx
-		Dependencies : 
-	</Project1>
-	<Project2>
 		NAME : 1186_H
 		GUID : {B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}
-		PATH : .\1186_H\LIB_FOR_1186.csuprjx
+		PATH : .\LIB_FOR_1186.csuprjx
 		Dependencies : 
-	</Project2>
+	</Project1>
 </Projects>
 
 # End Project
