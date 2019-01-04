@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserOptions>
+	<OpenState>
+		<OpenFiles>
+			Path=".\\user_LCD.asm"
+			Path=".\\lib_1186_OTP_WR.asm"
+			Path=".\\lib_adc.asm"
+			Path=".\\lib_1186_utiliy.asm"
+			Path=".\\lib_1186_LCD.asm"
+			Path=".\\RAM_DEFINE.inc"
+			Path=".\\ScaleSleep.asm"
+			Path=".\\ScaleWeight.asm"
+			Path=".\\lib_getcount.asm"
+			Path=".\\ScaleKey.asm"
+			Path=".\\user_funs.asm"
+			Path=".\\ScaleMain.asm"
+			Path=".\\lib_key.asm"
+			Path=".\\lib_3weightCal.asm"
+			Path=".\\SysConfig.inc"
+			State="1,54,67"
+		</OpenFiles>
+		<OpenFolders>
+			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
+				Expanded="TRUE"
+				Name="Header Files"
+				Name="APP Files"
+				Name="LCD Files"
+				Name="USER_CODE"
+				Name="ScaleModule"
+				Name="Lib_Code"
+			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
+		</OpenFolders>
+	</OpenState>
+</UserOptions>

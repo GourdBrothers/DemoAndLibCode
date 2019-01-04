@@ -2,10 +2,16 @@
 <UserOptions>
 	<OpenState>
 		<OpenFiles>
+			Path=".\\ScaleMain.asm"
+			Path=".\\ScaleInit.asm"
+			State="33,490,490"
 		</OpenFiles>
 		<OpenFolders>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 				Expanded="TRUE"
+				Name="Header Files"
+				Name="APP Files"
+				Name="ScaleModule"
 			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 		</OpenFolders>
 	</OpenState>
