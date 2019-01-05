@@ -2,14 +2,6 @@
 ;==== user_LCD.ASM
 ;=======================================================
 
-LCD1_map    EQU  Buffer0
-LCD2_map    EQU  Buffer1
-LCD3_map    EQU  Buffer2
-LCD4_map    EQU  Buffer3
-LCD5_map    EQU  Buffer4
-LCD6_map    EQU  Buffer5
-LCD7_map    EQU  Buffer6
-
 ;=======================================================
 LCD_BIT_F   EQU   0
 LCD_BIT_G   EQU   1
@@ -31,49 +23,49 @@ LCD_BIT_SJ  EQU   3
 ;**** 用户需要动手修改LCD对应显示内容的位置(物理显示位)
 ;*******************************************
 
-#DEFINE  Set_Num1_F     BSF    LCD1_map,LCD_BIT_F
-#DEFINE  Set_Num1_G     BSF    LCD1_map,LCD_BIT_G
-#DEFINE  Set_Num1_E     BSF    LCD1_map,LCD_BIT_E
-#DEFINE  Set_Num1_D     BSF    LCD1_map,LCD_BIT_D
-#DEFINE  Set_Num1_A     BSF    LCD1_map,LCD_BIT_A
-#DEFINE  Set_Num1_B     BSF    LCD1_map,LCD_BIT_B
-#DEFINE  Set_Num1_C     BSF    LCD1_map,LCD_BIT_C
+#DEFINE  Set_Num1_F     BSF    R_LED_1,LCD_BIT_F
+#DEFINE  Set_Num1_G     BSF    R_LED_1,LCD_BIT_G
+#DEFINE  Set_Num1_E     BSF    R_LED_1,LCD_BIT_E
+#DEFINE  Set_Num1_D     BSF    R_LED_1,LCD_BIT_D
+#DEFINE  Set_Num1_A     BSF    R_LED_1,LCD_BIT_A
+#DEFINE  Set_Num1_B     BSF    R_LED_1,LCD_BIT_B
+#DEFINE  Set_Num1_C     BSF    R_LED_1,LCD_BIT_C
 
-#DEFINE  Set_Num2_F     BSF    LCD2_map,LCD_BIT_F
-#DEFINE  Set_Num2_G     BSF    LCD2_map,LCD_BIT_G
-#DEFINE  Set_Num2_E     BSF    LCD2_map,LCD_BIT_E
-#DEFINE  Set_Num2_D     BSF    LCD2_map,LCD_BIT_D
-#DEFINE  Set_Num2_A     BSF    LCD2_map,LCD_BIT_A
-#DEFINE  Set_Num2_B     BSF    LCD2_map,LCD_BIT_B
-#DEFINE  Set_Num2_C     BSF    LCD2_map,LCD_BIT_C
-#DEFINE  Set_Num2_COL   BSF    LCD2_map,LCD_BIT_COL
+#DEFINE  Set_Num2_F     BSF    R_LED_2,LCD_BIT_F
+#DEFINE  Set_Num2_G     BSF    R_LED_2,LCD_BIT_G
+#DEFINE  Set_Num2_E     BSF    R_LED_2,LCD_BIT_E
+#DEFINE  Set_Num2_D     BSF    R_LED_2,LCD_BIT_D
+#DEFINE  Set_Num2_A     BSF    R_LED_2,LCD_BIT_A
+#DEFINE  Set_Num2_B     BSF    R_LED_2,LCD_BIT_B
+#DEFINE  Set_Num2_C     BSF    R_LED_2,LCD_BIT_C
+#DEFINE  Set_Num2_COL   BSF    R_LED_2,LCD_BIT_COL
 
-#DEFINE  Set_Num3_F     BSF    LCD3_map,LCD_BIT_F
-#DEFINE  Set_Num3_G     BSF    LCD3_map,LCD_BIT_G
-#DEFINE  Set_Num3_E     BSF    LCD3_map,LCD_BIT_E
-#DEFINE  Set_Num3_D     BSF    LCD3_map,LCD_BIT_D
-#DEFINE  Set_Num3_A     BSF    LCD3_map,LCD_BIT_A
-#DEFINE  Set_Num3_B     BSF    LCD3_map,LCD_BIT_B
-#DEFINE  Set_Num3_C     BSF    LCD3_map,LCD_BIT_C
-#DEFINE  Set_Num3_P     BSF    LCD3_map,LCD_BIT_P
+#DEFINE  Set_Num3_F     BSF    R_LED_3,LCD_BIT_F
+#DEFINE  Set_Num3_G     BSF    R_LED_3,LCD_BIT_G
+#DEFINE  Set_Num3_E     BSF    R_LED_3,LCD_BIT_E
+#DEFINE  Set_Num3_D     BSF    R_LED_3,LCD_BIT_D
+#DEFINE  Set_Num3_A     BSF    R_LED_3,LCD_BIT_A
+#DEFINE  Set_Num3_B     BSF    R_LED_3,LCD_BIT_B
+#DEFINE  Set_Num3_C     BSF    R_LED_3,LCD_BIT_C
+#DEFINE	 Set_Num3_P     BSF    R_LED_3,LCD_BIT_P
 
-#DEFINE  Set_Num4_F     BSF    LCD4_map,LCD_BIT_F
-#DEFINE  Set_Num4_G     BSF    LCD4_map,LCD_BIT_G
-#DEFINE  Set_Num4_E     BSF    LCD4_map,LCD_BIT_E
-#DEFINE  Set_Num4_D     BSF    LCD4_map,LCD_BIT_D
-#DEFINE  Set_Num4_A     BSF    LCD4_map,LCD_BIT_A
-#DEFINE  Set_Num4_B     BSF    LCD4_map,LCD_BIT_B
-#DEFINE  Set_Num4_C     BSF    LCD4_map,LCD_BIT_C
+#DEFINE  Set_Num4_F     BSF    R_LED_4,LCD_BIT_F
+#DEFINE  Set_Num4_G     BSF    R_LED_4,LCD_BIT_G
+#DEFINE  Set_Num4_E     BSF    R_LED_4,LCD_BIT_E
+#DEFINE  Set_Num4_D     BSF    R_LED_4,LCD_BIT_D
+#DEFINE  Set_Num4_A     BSF    R_LED_4,LCD_BIT_A
+#DEFINE  Set_Num4_B     BSF    R_LED_4,LCD_BIT_B
+#DEFINE  Set_Num4_C     BSF    R_LED_4,LCD_BIT_C
 
-#DEFINE  Set_DOT_KG     BSF    LCD5_map,LCD_BIT_KG
-#DEFINE  Set_DOT_LB     BSF    LCD5_map,LCD_BIT_LB
-#DEFINE  Set_DOT_ST     BSF    LCD5_map,LCD_BIT_ST
-#DEFINE  Set_DOT_SJ     BSF    LCD5_map,LCD_BIT_SJ
+#DEFINE  Set_DOT_KG     BSF    R_LED_5,LCD_BIT_KG
+#DEFINE  Set_DOT_LB     BSF    R_LED_5,LCD_BIT_LB
+#DEFINE  Set_DOT_ST     BSF    R_LED_5,LCD_BIT_ST
+#DEFINE  Set_DOT_SJ     BSF    R_LED_5,LCD_BIT_SJ
 
 ;=======================================================
 ;==== 用户显示区
 ;=======================================================
-USER_LCD_RAM	.section	BANK0
+USER_LCD_RAM	.section	BANK0 
 
 	Display1	   DS  1
 	 B_Display1_F  EQU 7
@@ -93,7 +85,6 @@ USER_LCD_RAM	.section	BANK0
 	 B_Display2_B  EQU 2
 	 B_Display2_C  EQU 1
 	 B_Display2_COL  EQU 0
-
 	 
 	Display3	   DS  1
 	 B_Display3_F  EQU 7
@@ -105,7 +96,6 @@ USER_LCD_RAM	.section	BANK0
 	 B_Display3_C  EQU 1
 	 B_Display3_P  EQU 0
 
-	 
 	Display4	   DS  1
 	 B_Display4_F  EQU 7
 	 B_Display4_G  EQU 6
@@ -127,12 +117,12 @@ USER_LCD_RAM	.section	BANK0
 
 XCWK_Math_ROM .section rom
 
-Fun_LCD_SetAllBuf:
+Fun_LED_SetAllBuf:
     MOVLW    0FFH
-    GOTO     Fun_LCD_CommBuff
-Fun_LCD_ResetAllBuf:
+    GOTO     Fun_LED_CommBuff
+Fun_LED_ResetAllBuf:
     MOVLW    000H
-Fun_LCD_CommBuff:
+Fun_LED_CommBuff:
 	MOVWF    Display1
 	MOVWF    Display2
 	MOVWF    Display3
@@ -141,7 +131,7 @@ Fun_LCD_CommBuff:
 RETURN
 
 
-Fun_LCD_USER_SetBits:	; 用户不可调用
+Fun_LED_USER_SetBits:	; 用户不可调用
 ; Display1
     BTFSC	Display1,B_Display1_F
             Set_Num1_F
@@ -219,57 +209,57 @@ Fun_LCD_USER_SetBits:	; 用户不可调用
 		    Set_DOT_ST
 ; Display6 
 ; Display7
-Fun_LCD_USER_SetBits_END:
-	GOTO	Fun_LCD_Load_REG
+Fun_LED_USER_SetBits_END:
+	GOTO	Fun_LED_Load_REG
 	
-Fun_LCD_USER_Num:
+Fun_LED_USER_Num:
 	
 	MOVLW		00H
     XORWF		TempRam2, W
     BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
+    GOTO		Fun_LED_USER_Num_1
     MOVLW		Disp_No
     MOVWF		TempRam2
 
     MOVLW		00H
     XORWF		TempRam3, W
     BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
+    GOTO		Fun_LED_USER_Num_1
     MOVLW		Disp_No
     MOVWF		TempRam3
     
     MOVLW		00H
     XORWF		TempRam4, W
     BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
+    GOTO		Fun_LED_USER_Num_1
     MOVLW		Disp_No
     MOVWF		TempRam4
     
     BTFSS		ScaleFlow,B_ScaleFlow_CAL
-    GOTO		Fun_LCD_USER_Num_1
+    GOTO		Fun_LED_USER_Num_1
     
     MOVLW		00H
     XORWF		TempRam5, W
     BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
+    GOTO		Fun_LED_USER_Num_1
     MOVLW		Disp_No
     MOVWF		TempRam5
     
-Fun_LCD_USER_Num_1:
+Fun_LED_USER_Num_1:
     MOVFW		TempRam3
-    CALL		Table_Lcd_Num
+    CALL		Table_LED_Num
     IORWF		Display1,F
 
     MOVFW		TempRam4
-    CALL		Table_Lcd_Num
+    CALL		Table_LED_Num
     IORWF		Display2,F
 
     MOVFW		TempRam5
-    CALL		Table_Lcd_Num
+    CALL		Table_LED_Num
     IORWF		Display3,F
 
     MOVFW		TempRam6
-    CALL		Table_Lcd_Num
+    CALL		Table_LED_Num
     IORWF		Display4,F
     
  RETURN

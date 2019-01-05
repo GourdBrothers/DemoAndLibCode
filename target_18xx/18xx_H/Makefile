@@ -26,7 +26,7 @@ ASM_FILES			  = "G:\Git\DemoAndLibCode\target_18xx\18xx_H\Sys_Main.asm" \
 "G:\Git\DemoAndLibCode\target_18xx\18xx_H\user_Funs.asm" \
 "G:\Git\DemoAndLibCode\target_18xx\18xx_H\user_LCD.asm" \
 "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_ISR.asm" \
-"G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_LCD.asm" \
+"G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_LED.asm" \
 "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_utiliy.asm" \
 "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_3weightCal.asm" \
 "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_adc.asm" \
@@ -40,7 +40,7 @@ OBJ_FILES			  = "$(INTERTMP_DIR)\Sys_Main.obj" \
 "$(INTERTMP_DIR)\user_Funs.obj" \
 "$(INTERTMP_DIR)\user_LCD.obj" \
 "$(INTERTMP_DIR)\lib_18xx_ISR.obj" \
-"$(INTERTMP_DIR)\lib_18xx_LCD.obj" \
+"$(INTERTMP_DIR)\lib_18xx_LED.obj" \
 "$(INTERTMP_DIR)\lib_18xx_utiliy.obj" \
 "$(INTERTMP_DIR)\lib_3weightCal.obj" \
 "$(INTERTMP_DIR)\lib_adc.obj" \
@@ -77,8 +77,8 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 "$(INTERTMP_DIR)\lib_18xx_ISR.obj" : "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_ISR.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_ISR.asm" -o "$(INTERTMP_DIR)\lib_18xx_ISR.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\lib_18xx_LCD.obj" : "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_LCD.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_LCD.asm" -o "$(INTERTMP_DIR)\lib_18xx_LCD.obj" 
+"$(INTERTMP_DIR)\lib_18xx_LED.obj" : "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_LED.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_LED.asm" -o "$(INTERTMP_DIR)\lib_18xx_LED.obj" 
 	$(ECHO)
 "$(INTERTMP_DIR)\lib_18xx_utiliy.obj" : "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_utiliy.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_18xx\18xx_H\lib_18xx_utiliy.asm" -o "$(INTERTMP_DIR)\lib_18xx_utiliy.obj" 

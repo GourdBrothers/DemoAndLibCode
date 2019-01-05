@@ -10,14 +10,14 @@
 ;ScaleDisp_ROM .section	rom
 
 Scale_Disp_Entry:
-	CALL	Fun_LCD_ResetAllBuf
+	CALL	Fun_LED_ResetAllBuf
 	
 Scale_Disp_LowBat:	
 	BTFSS	ScaleFlag3,B_ScaleFlag3_Lo
 	GOTO	Scale_Disp_LowBat_END
-	MOVLW	LcdchL
+	MOVLW	LedchL
 	MOVWF	Display2
-	MOVLW	Lcdcho
+	MOVLW	Ledcho
 	MOVWF	Display3
 	GOTO	Scale_Disp_LOAD
 Scale_Disp_LowBat_END:
@@ -32,7 +32,7 @@ Scale_Disp_FLOW:
 	GOTO	Scale_Disp_LOAD
 
 Scale_Disp_Zero:
-	CALL	Fun_LCD_SetAllBuf
+	CALL	Fun_LED_SetAllBuf
 Scale_Disp_Zero_END:
 	GOTO	Scale_Disp_LOAD
 
@@ -52,9 +52,9 @@ Scale_Disp_W_NEG_END:
 Scale_Disp_W_oL:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_oL
 	GOTO	Scale_Disp_W_oL_END
-	MOVLW	Lcdcho
+	MOVLW	Ledcho
 	MOVWF	Display2
-	MOVLW	LcdchL
+	MOVLW	LedchL
 	MOVWF	Display3
 	GOTO	Scale_Disp_Weight_END
 Scale_Disp_W_oL_END:
@@ -70,7 +70,7 @@ Scale_Disp_CAL_END:
 ;	GOTO	Scale_Disp_LOAD
 
 Scale_Disp_LOAD:
-	CALL	Fun_LCD_Load
+	CALL	Fun_LED_Load
 	
 Scale_Disp_Exit:
 

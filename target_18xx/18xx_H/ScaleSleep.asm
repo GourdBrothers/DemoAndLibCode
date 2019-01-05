@@ -32,9 +32,9 @@ ScaleSleep_wait_loop:
 ScaleSleep_wait_end:
 
 ScaleSleep_cfg:
-	CALL	Fun_LCD_ResetAllBuf
-	CALL	Fun_LCD_Load
-	CALL	Fun_LCD_Close
+	CALL	Fun_LED_ResetAllBuf
+	CALL	Fun_LED_Load
+	CALL	Fun_LED_Close
 	
 	CALL	Fun_LoCheck_Close
 	

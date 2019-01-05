@@ -13,18 +13,18 @@ ECHO					= @echo //-------------------------------------------------------------
 ###################################################
 #编译选项定义处
 ###################################################
-OUTPUT_DIR            = C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\.\Release
-INTERTMP_DIR          = C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\.\Release
-PROJ_PATH			  = C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块
+OUTPUT_DIR            = G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\.\Release
+INTERTMP_DIR          = G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\.\Release
+PROJ_PATH			  = G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板
 PROJ_NAME			  = LIB_FOR_1186
 BODY_NAME			  = CSU8RP1186
 ASMFLAGS              = -no-warn -filetype=obj -arch=cscc -fill=0xffff -chip=CSU8RP1186 -mattr=c16 -BankCount=2
 LINKFLAGS             = -t asm -bt 16
 LIBMAKERFLAGS         = -chiptype 16 -debuginfo RemoveDebugInfo -encodeinfo Encryption
 CODE_OPTION			  = %%CodeOption%%
-ASM_FILES			  = "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm" \
-"C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_Funs.asm" \
-"C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_LCD.asm"
+ASM_FILES			  = "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm" \
+"G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_Funs.asm" \
+"G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_LCD.asm"
 
 OBJ_FILES			  = "$(INTERTMP_DIR)\Sys_Main.obj" \
 "$(INTERTMP_DIR)\user_Funs.obj" \
@@ -45,14 +45,14 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 ###################################################
 #.ASM文件到.OBJ文件
 ###################################################
-"$(INTERTMP_DIR)\Sys_Main.obj" : "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm"
-	$(ASM) $(ASMFLAGS) -gstab "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm" -o "$(INTERTMP_DIR)\Sys_Main.obj" 
+"$(INTERTMP_DIR)\Sys_Main.obj" : "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm" -o "$(INTERTMP_DIR)\Sys_Main.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\user_Funs.obj" : "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_Funs.asm"
-	$(ASM) $(ASMFLAGS) -gstab "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_Funs.asm" -o "$(INTERTMP_DIR)\user_Funs.obj" 
+"$(INTERTMP_DIR)\user_Funs.obj" : "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_Funs.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_Funs.asm" -o "$(INTERTMP_DIR)\user_Funs.obj" 
 	$(ECHO)
-"$(INTERTMP_DIR)\user_LCD.obj" : "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_LCD.asm"
-	$(ASM) $(ASMFLAGS) -gstab "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_LCD.asm" -o "$(INTERTMP_DIR)\user_LCD.obj" 
+"$(INTERTMP_DIR)\user_LCD.obj" : "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_LCD.asm"
+	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_LCD.asm" -o "$(INTERTMP_DIR)\user_LCD.obj" 
 	$(ECHO)
 
 #main.obj :

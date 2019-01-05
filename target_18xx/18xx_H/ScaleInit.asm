@@ -32,10 +32,10 @@ ScaleInit_LO:
 ScaleInit_TIMER:
 	CALL	Fun_TIMER_init
 
-ScaleInit_LCD:
-	CALL	Fun_LCD_Init
-	CALL    Fun_LCD_ResetAllBuf
-	CALL    Fun_LCD_Load
+ScaleInit_LED:
+	CALL	Fun_LED_Init
+	CALL    Fun_LED_ResetAllBuf
+	CALL    Fun_LED_Load
 
 ScaleInit_ADC:
 	CALL	Fun_ADC_Init

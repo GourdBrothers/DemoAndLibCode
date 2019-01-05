@@ -10,10 +10,10 @@ codesize:"0x0FFF"
 limitcodesize:"0x0FFF"
 appendcodesize:"0x000"
 bankcount:"2"
-input:"C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Release\Sys_Main.obj","C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Release\user_Funs.obj","C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Release\user_LCD.obj"
-library:"C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Lib\lib_H_V10.lib","C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Lib\lib_1186H_V10.lib"
-temppath:"C:/Users/Administrator/Desktop/1186_LCD普通人体秤模块/Release\"
-outputbin:"C:/Users/Administrator/Desktop/1186_LCD普通人体秤模块/Release\LIB_FOR_1186.hex"
+input:"G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Release\Sys_Main.obj","G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Release\user_Funs.obj","G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Release\user_LCD.obj"
+library:"G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Lib\lib_H_V10.lib","G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Lib\lib_1186H_V10.lib"
+temppath:"G:/Git/DemoAndLibCode/模板工程与原始工程/1186LCD普通人体秤/V10_20190103/模板工程/1186_LCD普通人体秤模板/Release\"
+outputbin:"G:/Git/DemoAndLibCode/模板工程与原始工程/1186LCD普通人体秤/V10_20190103/模板工程/1186_LCD普通人体秤模板/Release\LIB_FOR_1186.hex"
 ;example begin
 ;locate: CSCC_SECTION_1 at 0x80
 ;locate: CSCC_SECTION_2 after CSCC_INIT_1

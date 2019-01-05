@@ -37,16 +37,15 @@
 	</Breakpoints>
 	<OpenState>
 		<OpenFiles>
-			Path=".\\1186_H\\Sys_Main.asm"
-			State="9,298,452"
+			Path=".\\1186_H\\user_LCD.asm"
+			State="78,2747,2759"
 		</OpenFiles>
 		<OpenFolders>
 			<{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
 			</{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 				Expanded="TRUE"
-				Name="APP Files"
-				Name="ScaleModule"
+				Name="USER_CODE"
 			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 		</OpenFolders>
 	</OpenState>

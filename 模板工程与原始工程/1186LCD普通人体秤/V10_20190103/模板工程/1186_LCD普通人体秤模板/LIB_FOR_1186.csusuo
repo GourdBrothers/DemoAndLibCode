@@ -4,13 +4,15 @@
 		<OpenFiles>
 			Path=".\\ScaleMain.asm"
 			Path=".\\ScaleInit.asm"
-			State="33,490,490"
+			Path=".\\user_LCD.asm"
+			State="135,3844,3844"
 		</OpenFiles>
 		<OpenFolders>
 			<{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 				Expanded="TRUE"
 				Name="Header Files"
 				Name="APP Files"
+				Name="USER_CODE"
 				Name="ScaleModule"
 			</{B9BF292B-B4E3-4DD4-B7D2-7C6CB1987B6D}>
 		</OpenFolders>

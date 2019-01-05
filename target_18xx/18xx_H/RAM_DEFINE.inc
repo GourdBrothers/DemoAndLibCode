@@ -1,6 +1,7 @@
 ﻿;===================================================
 ;=== RAM_DEFINE.INC
 ;===================================================
+
 RAM_DEFINE_BANK0 .section BANK0,addr = 0x89
 
 ;--- Global variable definition

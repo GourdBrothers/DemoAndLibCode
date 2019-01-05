@@ -1,5 +1,5 @@
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -271,8 +271,8 @@
 .stabn 0xe0,255,0,0x00000001
 .stabs "RAM_DEFINE_BANK1:S1",0x20,0,0,0x00000100
 .stabs "orgsec_0000:S1",0x20,0,0,0x00008000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -362,8 +362,8 @@
 .stabn 0x44,0,69,0x000000a0
 .stabn 0xe0,255,0,0x000000a1
 .stabs "SYS_RESET:S1",0x20,0,0,0x000080a1
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -447,8 +447,8 @@
 .stabn 0x44,0,47,0x000000c3
 .stabn 0xe0,255,0,0x000000c4
 .stabs "Sys_PowerOn_Exit:S1",0x20,0,0,0x000080c4
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -1642,8 +1642,8 @@
 .stabs "ScaleMain_powerSave_END:S1",0x20,0,0,0x0000834d
 .stabs "SYS_MAIN_Scale_END:S1",0x20,0,0,0x0000834d
 .stabs "SYS_MAIN_FLOW_END:S1",0x20,0,0,0x0000834d
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\Sys_Main.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\Sys_Main.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -1651,16 +1651,16 @@
 .stabn 0xc0,255,0,0x0000034d
 .stabn 0x44,0,66,0x0000034d
 .stabn 0xe0,255,0,0x0000034e
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_Funs.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_Funs.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
 .stabs "sbit:t12=r12;0;1;",0x80,0,0,0x00000000
 .stabs "user_Funs_rom:S1",0x20,0,0,0x0000834e
 .stabs "Fun_User_CountKgToLb:S1",0x20,0,0,0x0000834e
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_Funs.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_Funs.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -1780,8 +1780,8 @@
 .stabn 0x44,0,111,0x00000397
 .stabn 0x44,0,112,0x00000398
 .stabn 0xe0,255,0,0x0000004a
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_LCD.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_LCD.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000
@@ -1851,8 +1851,8 @@
 .stabn 0xe0,255,0,0x00000001
 .stabs "XCWK_Math_ROM:S1",0x20,0,0,0x00008399
 .stabs "Fun_LCD_SetAllBuf:S1",0x20,0,0,0x00008399
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块",0x64,0,0,0x00000000
-.stabs "C:\Users\Administrator\Desktop\1186_LCD普通人体秤模块\user_LCD.asm",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板",0x64,0,0,0x00000000
+.stabs "G:\Git\DemoAndLibCode\模板工程与原始工程\1186LCD普通人体秤\V10_20190103\模板工程\1186_LCD普通人体秤模板\user_LCD.asm",0x64,0,0,0x00000000
 .stabs "void:t1=r1;0;255;",0x80,0,0,0x00000000
 .stabs "unsigned char:t2=r2;0;255;",0x80,0,0,0x00000000
 .stabs "short unsigned int:t3=r3;0;65535;",0x80,0,0,0x00000000

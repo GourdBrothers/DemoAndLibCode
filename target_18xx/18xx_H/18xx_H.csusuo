@@ -2,16 +2,19 @@
 <UserOptions>
 	<OpenState>
 		<OpenFiles>
-			Path=".\\lib_18xx_LCD.asm"
-			State="48,1698,1903"
+			Path=".\\lib_18xx_utiliy.asm"
+			Path=".\\SysConfig.inc"
+			Path=".\\lib_18xx_LED.asm"
+			Path=".\\user_LCD.asm"
+			Path=".\\ScaleDisp.asm"
+			Path=".\\ScaleDisp_Cal.asm"
+			State="75,1490,1490"
 		</OpenFiles>
 		<OpenFolders>
 			<{7FA97F09-9D87-489E-B35D-73E5CF4D8F9E}>
 				Expanded="TRUE"
 				Name="Header Files"
 				Name="APP Files"
-				Name="user_code Files"
-				Name="ScaleModule Files "
 				Name="lib_Code Files"
 			</{7FA97F09-9D87-489E-B35D-73E5CF4D8F9E}>
 		</OpenFolders>

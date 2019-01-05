@@ -47,7 +47,7 @@ ScaleDisp_W_Kg:
 	MOVFW	TempRam6
 	MOVWF	TempRam13
 	CALL	Fun_Math_Hex3_Bcd
-	CALL	Fun_LCD_USER_Num
+	CALL	Fun_LED_USER_Num
 ScaleDisp_W_Kg_Char:
 	BSF		Display3,B_Display3_P 
 	BSF		Display5,B_Display5_KG
@@ -62,7 +62,7 @@ ScaleDisp_W_Lb:
 	MOVFW	TempRam6
 	MOVWF	TempRam13
 	CALL	Fun_Math_Hex3_Bcd
-	CALL	Fun_LCD_USER_Num
+	CALL	Fun_LED_USER_Num
 ScaleDisp_W_Lb_Char:
 	BSF		Display3,B_Display3_P 
 	BSF		Display5,B_Display5_LB
@@ -100,11 +100,11 @@ ScaleDisp_W_St:
     
 ScaleDisp_W_St0:
 	MOVFW	TempRam5
-    CALL	Table_Lcd_Num
+    CALL	Table_LED_Num
     IORWF	Display1,F
 
     MOVFW	TempRam6
-    CALL	Table_Lcd_Num
+    CALL	Table_LED_Num
     IORWF	Display2,F
     
 ScaleDisp_W_St_lb:
@@ -125,11 +125,11 @@ ScaleDisp_W_St_lb:
 ScaleDisp_W_St_lb0:	
 	
 	MOVFW	TempRam4
-    CALL	Table_Lcd_Num
+    CALL	Table_LED_Num
     IORWF	Display3,F
 
     MOVFW	TempRam5
-    CALL	Table_Lcd_Num
+    CALL	Table_LED_Num
     IORWF	Display4,F
 	
 ScaleDisp_W_St_Char:

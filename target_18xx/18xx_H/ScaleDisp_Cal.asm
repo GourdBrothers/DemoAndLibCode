@@ -32,33 +32,33 @@ ScaleDisp_Cal_ADC:
 	MOVFW	L_DR
 	MOVWF	TempRam13
 	CALL	Fun_Math_Hex3_Bcd
-	CALL	Fun_LCD_USER_Num
+	CALL	Fun_LED_USER_Num
 ScaleDisp_Cal_ADC_END:
 	GOTO	ScaleDisp_Cal_Exit
 
 ScaleDisp_Cal_ZERO:
-	MOVLW	LcdchC
+	MOVLW	LedchC
 	MOVWF	Display2
-	MOVLW	LcdchA
+	MOVLW	LedchA
 	MOVWF	Display3
-	MOVLW	LcdchL
+	MOVLW	LedchL
 	MOVWF	Display4
 ScaleDisp_Cal_ZERO_END:
 	GOTO	ScaleDisp_Cal_Exit
 
 ScaleDisp_Cal_DOT1:
-	MOVLW	Lcdch5
+	MOVLW	Ledch5
 	MOVWF	Display2
-	MOVLW	Lcdch0
+	MOVLW	Ledch0
 	MOVWF	Display3
 	MOVWF	Display4
 ScaleDisp_Cal_DOT1_END:
 	GOTO	ScaleDisp_Cal_DOT_Comm
 
 ScaleDisp_Cal_DOT2:
-	MOVLW	Lcdch1
+	MOVLW	Ledch1
 	MOVWF	Display1
-	MOVLW	Lcdch0
+	MOVLW	Ledch0
 	MOVWF	Display2
 	MOVWF	Display3
 	MOVWF	Display4
@@ -66,11 +66,11 @@ ScaleDisp_Cal_DOT2_END:
 	GOTO	ScaleDisp_Cal_DOT_Comm
 
 ScaleDisp_Cal_DOT3:
-	MOVLW	Lcdch1
+	MOVLW	Ledch1
 	MOVWF	Display1
-	MOVLW	Lcdch5
+	MOVLW	Ledch5
 	MOVWF	Display2
-	MOVLW	Lcdch0
+	MOVLW	Ledch0
 	MOVWF	Display3
 	MOVWF	Display4
 ScaleDisp_Cal_DOT3_END:
@@ -80,22 +80,22 @@ ScaleDisp_Cal_DOT_Comm:
 	GOTO	ScaleDisp_Cal_Exit
 
 ScaleDisp_Cal_PASS:
-	MOVLW	LcdchP
+	MOVLW	LedchP
 	MOVWF	Display1
-	MOVLW	LcdchA
+	MOVLW	LedchA
 	MOVWF	Display2
-	MOVLW	Lcdch5
+	MOVLW	Ledch5
 	MOVWF	Display3
 	MOVWF	Display4
 ScaleDisp_Cal_PASS_END:
 	GOTO	ScaleDisp_Cal_Exit
 
 ScaleDisp_Cal_ERR:
-	MOVLW	Lcdch0
+	MOVLW	Ledch0
 	MOVWF	Display4
-	MOVLW	LcdchE
+	MOVLW	LedchE
 	MOVWF	Display1
-	MOVLW	Lcdchr
+	MOVLW	Ledchr
 	MOVWF	Display2
 	MOVWF	Display3
 	

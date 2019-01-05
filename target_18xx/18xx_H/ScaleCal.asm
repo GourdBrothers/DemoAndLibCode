@@ -126,8 +126,8 @@ ScaleCal_DOT3_END:
 	GOTO	ScaleCal_Exit
 	
 ScaleCal_OTP_write:
-	CALL	Fun_LCD_ResetAllBuf
-	CALL	Fun_LCD_Load
+	CALL	Fun_LED_ResetAllBuf
+	CALL	Fun_LED_Load
 ;	CALL    Fun_OTP_WRITE_CAL
 ;	BTFSC	OTP_ISP_FLAG,B_OTP_ISP_VPP_ERR
 ;	GOTO	ScaleCal_Err
