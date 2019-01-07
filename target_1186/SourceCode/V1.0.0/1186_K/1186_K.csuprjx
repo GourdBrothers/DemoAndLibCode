@@ -95,27 +95,31 @@
 				<Assembler>
 					Options="-filetype=obj -arch=cscc"
 					IncludePaths=""
+					GenerateDebugInfoFile="TRUE"
 				</Assembler>
 				<Linker>
 					Options=""
 					FillValue="0xffff"
 					StartUpCode="$(StartUpCode)"
+					SpecifyOffset="0x0000"
+					<Libraries>
+					</Libraries>
 				</Linker>
 				<Debugger>
 					<LCD Simulator>
 						ROW1LEFT="4"
-						ROW1DIGNUM="6"
+						ROW1DIGNUM="5"
 						ROW1RIGHT="4"
 						ROW2LEFT="0"
 						ROW2DIGMUM="0"
 						ROW2RIGHT="0"
 						COM="4"
-						SEG="14"
+						SEG="12"
 						DISPLAY="1"
 					</LCD Simulator>
 					<BuleTooth>
-						BuleTooth_FillData=""
-						BuleTooth_FillMacAddress=""
+						BuleTooth_FillData="0"
+						BuleTooth_FillMacAddress="0"
 						BuleTooth_MacAddress=""
 					</BuleTooth>
 				</Debugger>
@@ -146,15 +150,31 @@
 				<Properties>
 				</Properties>
 			</File>
+			<File>
+				FilePath=".\\RAM_DEFINE.inc"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\SysConfig.inc"
+				<Properties>
+				</Properties>
+			</File>
 		</Folder>
 		<Folder>
 			<Properties>
 			</Properties>
-			Name="Source Files"
+			Name="APP Files"
 			Filter="asm"
 			<File>
-				FilePath=".\\1186_K.asm"
+				FilePath=".\\Sys_Main.asm"
 				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\Sys_PowerOn.asm"
+				Flags="0x000014CF"
 				<Properties>
 				</Properties>
 			</File>
@@ -177,6 +197,168 @@
 			Filter="lik"
 			<File>
 				FilePath=".\\Script.lik"
+				<Properties>
+				</Properties>
+			</File>
+		</Folder>
+		<Folder>
+			<Properties>
+			</Properties>
+			Name="UserCode Files"
+			Filter=""
+			<File>
+				FilePath=".\\user_Funs.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\user_ISR.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\user_LCD.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\user_OTP_store.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+		</Folder>
+		<Folder>
+			<Properties>
+			</Properties>
+			Name="ScaleModule Files"
+			Filter=""
+			<File>
+				FilePath=".\\ScaleMain.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleInit.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleGetZero.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleWeight.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleCal.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleDisp.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleDisp_Cal.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleDisp_Weight.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleKey.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\ScaleSleep.asm"
+				Flags="0x000014CF"
+				<Properties>
+				</Properties>
+			</File>
+		</Folder>
+		<Folder>
+			<Properties>
+			</Properties>
+			Name="LibCode Files"
+			Filter=""
+			<File>
+				FilePath=".\\lib_1186_ISR.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_LCD.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_OTP_WR.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_timer.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_1186_utiliy.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_adc.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_bat.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_GetCount.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_key.asm"
+				Flags="0x000004CF"
+				<Properties>
+				</Properties>
+			</File>
+			<File>
+				FilePath=".\\lib_Math.asm"
+				Flags="0x000004CF"
 				<Properties>
 				</Properties>
 			</File>

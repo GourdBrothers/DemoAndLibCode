@@ -1,0 +1,27 @@
+﻿# Generalplus IDE Solution File, Format Version 1.0.0
+# Warning: do not edit or delete this solution file!
+
+# ////////////////////////////////////////////////////
+# Begin Solution
+<Solution>
+	NAME : 1186_K
+	GUID : {0F65639E-8444-4499-B671-19B27B5C2796}
+	STARTUP : {17A4C4C1-869E-4DEB-B777-B628F54C237A}
+	ACTIVECONFIGURATION : Release
+</Solution>
+# End Solution
+
+# ////////////////////////////////////////////////////
+# Begin Project
+<Projects>
+	COUNT : 1
+	<Project1>
+		NAME : 1186_K
+		GUID : {17A4C4C1-869E-4DEB-B777-B628F54C237A}
+		PATH : .\1186_K.csuprjx
+		Dependencies : 
+	</Project1>
+</Projects>
+
+# End Project
+# ////////////////////////////////////////////////////
