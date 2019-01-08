@@ -2,19 +2,22 @@
 <UserOptions>
 	<OpenState>
 		<OpenFiles>
-			Path=".\\RAM_DEFINE.inc"
-			Path=".\\ScaleWeight.asm"
-			Path=".\\lib_1186_utiliy.asm"
 			Path=".\\lib_GetCount.asm"
-			Path=".\\lib_adc.asm"
 			Path=".\\SysConfig.inc"
-			State="74,2100,2100"
+			Path=".\\csu8rp1186.inc"
+			Path=".\\lib_Math.asm"
+			Path=".\\Sys_Main.asm"
+			Path=".\\RAM_DEFINE.inc"
+			Path=".\\lib_adc.asm"
+			Path=".\\ScaleWeight.asm"
+			State="70,1277,1277"
 		</OpenFiles>
 		<OpenFolders>
 			<{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
 				Expanded="TRUE"
 				Name="Header Files"
-				Name="APP Files"
+				Name="LCD Files"
+				Name="UserCode Files"
 				Name="ScaleModule Files"
 				Name="LibCode Files"
 			</{17A4C4C1-869E-4DEB-B777-B628F54C237A}>
@@ -131,6 +134,15 @@
 			</Variable>
 			<Variable>
 				Name="TempRam6"
+			</Variable>
+			<Variable>
+				Name="TempRam11"
+			</Variable>
+			<Variable>
+				Name="TempRam12"
+			</Variable>
+			<Variable>
+				Name="TempRam13"
 			</Variable>
 		</dockbar_watch1>
 	</WatchVariables>

@@ -26,14 +26,15 @@ ScaleCalFlow	DS	1
 	
 
 ScaleUnit		DS  1
-	B_ScaleUnit_KG	EQU	0
-	B_ScaleUnit_LB	EQU	1
-	B_ScaleUnit_ST	EQU	2
+	B_ScaleUnit_G		EQU	0
+	B_ScaleUnit_OZ		EQU	1
+	B_ScaleUnit_LBOZ	EQU	2
+	B_ScaleUnit_ML		EQU	3
+	B_ScaleUnit_FLOZ	EQU	4
 	
 SysFlag1		DS	1
 	B_SysFlag1_Reset		EQU	0
 	B_SysFlag1_WakeUp		EQU	1
-	B_SysFlag1_OnWeight		EQU	2
 	
 ZeroH			DS	1
 ZeroM			DS	1
@@ -49,7 +50,7 @@ ScaleFlag1	DS	1
   B_ScaleFlag1_Neg		 EQU 4
   B_ScaleFlag1_Zero		 EQU 5
   B_ScaleFlag1_oL		 EQU 6
-  B_ScaleFlag1_Lock		 EQU 7
+
   
 ScaleFlag2	DS	1
   B_ScaleFlag2_Key_T		EQU 0
@@ -63,11 +64,8 @@ ScaleFlag2	DS	1
   
 ScaleFlag3	DS	1
   B_ScaleFlag3_CalTrg	EQU	0
-  B_ScaleFlag3_UnlockEn	EQU	1
-  B_ScaleFlag3_WdtAdc	EQU	2
-;  B_ScaleFlag3_TempAdc	EQU	3
-  B_ScaleFlag3_3wCalOk	EQU	4
-  B_ScaleFlag3_Lo		EQU	5
+  B_ScaleFlag3_Lo		EQU	1
+  B_ScaleFlag3_DispZero	EQU	2
   
 LockFlashTime	DS  1
 LockFlashCnt	DS  1

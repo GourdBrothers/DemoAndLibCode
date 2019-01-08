@@ -3,7 +3,7 @@
 ; filename: Sys_Main.asm
 ; chip    : CSU8RP1186
 ; author  :
-; date    : 2018-12-08
+; date    : 2019-01-07
 ;============================================
     INCLUDE    "CSU8RP1186.INC"
     INCLUDE    "RAM_DEFINE.INC"

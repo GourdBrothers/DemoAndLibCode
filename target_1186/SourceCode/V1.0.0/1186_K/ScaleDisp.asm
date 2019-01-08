@@ -42,13 +42,6 @@ Scale_Disp_W_Unst:
 	;GOTO	Scale_Disp_Weight_END
 Scale_Disp_W_Unst_END:
 
-Scale_Disp_W_NEG:
-	BTFSS	ScaleFlag1,B_ScaleFlag1_Neg
-	GOTO	Scale_Disp_W_NEG_END
-	CLRF	CountH
-	CLRF	CountL
-Scale_Disp_W_NEG_END:
-
 Scale_Disp_W_oL:
 	BTFSS	ScaleFlag1,B_ScaleFlag1_oL
 	GOTO	Scale_Disp_W_oL_END

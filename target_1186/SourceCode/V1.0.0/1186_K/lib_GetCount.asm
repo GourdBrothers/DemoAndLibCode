@@ -36,6 +36,13 @@ lib_GetCount_RAM .section BANK0
 	W_CAL3_ADC_H	DS	1
 	W_CAL3_ADC_M	DS	1
 	W_CAL3_ADC_L	DS	1
+	
+	TareTimer			DS	1
+	TareFlag			DS	1
+		B_TareFlag_Trg  EQU	0
+  		B_TareFlag_ON   EQU	1
+  	TareCountH			DS	1
+  	TareCountL			DS	1
 
 .ends
 
@@ -220,6 +227,107 @@ GetCount_COM:
 
 GetCount_End:
 
+RETURN
+
+Fun_TareTrg:
+		BTFSC		TareFlag,B_TareFlag_Trg
+		GOTO		Fun_TareTrg_End
+		CLRF		TareTimer
+		BSF			TareFlag,B_TareFlag_Trg
+Fun_TareTrg_End:
+RETURN
+
+Fun_TareCount:
+		BTFSS		TareFlag,B_TareFlag_Trg
+		GOTO		Fun_Tare_ON
+;---
+		MOVLW		TARE_MODE
+		MOVWF       REG0
+		MOVLW		03H
+		XORWF		REG0,W
+		BTFSC		STATUS,Z
+		GOTO		Fun_Tare_Do
+		MOVLW		02H
+		XORWF		REG0,W
+		BTFSC		STATUS,Z
+		GOTO		Fun_Tare_TIMER
+		MOVLW		01H
+		XORWF		REG0,W
+		BTFSC		STATUS,Z
+		GOTO		Fun_Tare_AdcStable
+;---
+Fun_Tare_AdcStable:
+		BTFSC		ScaleFlag1,B_ScaleFlag1_AdcStable
+		GOTO		Fun_Tare_Do
+		GOTO		Fun_Tare_ON
+Fun_Tare_TIMER:
+		INCF		TareTimer,F
+		MOVLW		TARE_DELAY_CNT
+		SUBWF		TareTimer,W
+		BTFSS		STATUS,C
+		GOTO		Fun_Tare_ON
+		CLRF		TareTimer
+Fun_Tare_Do:
+		BCF			TareFlag,B_TareFlag_Trg	
+		BTFSC		ScaleFlag1,B_ScaleFlag1_Neg
+		GOTO		Fun_Tare_DoDownRange
+		MOVLW		LOW		TARE_COUNT
+		SUBWF		CountL,W
+		MOVLW		HIGH	TARE_COUNT
+		SUBWFC		CountH,W
+		BTFSC		STATUS,C
+		GOTO		Fun_Tare_DoUpRange
+Fun_Tare_DoDownRange:
+		CLRF		TareFlag
+		CLRF		TareCountH
+		CLRF		TareCountL
+		CALL		Fun_SetZeroPoint
+		GOTO		Fun_Tare_Do_END
+Fun_Tare_DoUpRange:
+		BSF			TareFlag,B_TareFlag_ON
+		MOVFW		CountH
+		MOVWF		TareCountH
+		MOVFW		CountL
+		MOVWF		TareCountL
+Fun_Tare_Do_END:
+
+Fun_Tare_ON:
+		BTFSS		TareFlag,B_TareFlag_ON
+		GOTO		Fun_Tare_END
+		
+		MOVFF		TempRam3,CountH
+		MOVFF		TempRam4,CountL
+		MOVFF		TempRam5,TareCountH
+		MOVFF		TempRam6,TareCountL
+		
+		BTFSS		ScaleFlag1,B_ScaleFlag1_Neg
+		GOTO		Fun_Tare_ON_Pos
+Fun_Tare_ON_Neg:
+		MOVFW		TempRam6
+		ADDWF		TempRam4,F
+		MOVFW		TempRam5
+		ADDWFC		TempRam3,F
+		GOTO		Fun_Tare_ON_0
+Fun_Tare_ON_Pos:
+		CALL		Fun_Math_Sub2_2
+		BTFSS		STATUS,C
+		BSF			ScaleFlag1,B_ScaleFlag1_Neg
+		CALL		Fun_Math_Sub2_2_Neg
+Fun_Tare_ON_0:
+		MOVFF		CountH,TempRam3
+		MOVFF		CountL,TempRam4
+Fun_Tare_END:
+RETURN
+
+Fun_ChkMinDispCount:
+	BCF		ScaleFlag1,B_ScaleFlag1_Zero
+	MOVLW	MIN_DISP_COUNT
+    SUBWF	CountL,W
+    MOVLW	00H
+    SUBWFC	CountH,W
+    BTFSS	STATUS,C
+	GOTO	Fun_SetCountZero
+Fun_ChkMinDispCountEnd:
 RETURN
 
 .ends

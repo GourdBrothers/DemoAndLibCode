@@ -42,7 +42,7 @@ Scale_KEY_Short_UNIT:
 	BTFSS	STATUS,C
 	GOTO	Scale_KEY_Short_UNIT_END
 	CLRF	ScaleUnit
-	BSF		ScaleUnit,B_ScaleUnit_KG
+	BSF		ScaleUnit,B_ScaleUnit_G
 Scale_KEY_Short_UNIT_END:
 
 	CLRF	Key_Timer

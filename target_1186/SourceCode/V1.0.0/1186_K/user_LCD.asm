@@ -10,62 +10,68 @@ LCD5_map    EQU  Buffer4
 LCD6_map    EQU  Buffer5
 LCD7_map    EQU  Buffer6
 
+BIT0		EQU	 0
+BIT1		EQU	 1
+BIT2		EQU	 2
+BIT3		EQU	 3
+BIT4		EQU	 4
+BIT5		EQU	 5
+BIT6		EQU	 6
+BIT7		EQU	 7
+
 ;*******************************************
 ;**** 用户需要动手修改LCD对应显示内容的位置(物理显示位)
 ;*******************************************
+#DEFINE  Set_DOT_LB		BSF    LCD1_map,BIT0
+#DEFINE  Set_DOT_G		BSF    LCD1_map,BIT1
+#DEFINE  Set_DOT_FL		BSF    LCD1_map,BIT2
+#DEFINE  Set_DOT_OZ		BSF    LCD1_map,BIT3
 
-#DEFINE  Set_Num1_F     BSF    LCD1_map,0
-#DEFINE  Set_Num1_G     BSF    LCD1_map,0
-#DEFINE  Set_Num1_E     BSF    LCD1_map,0
-#DEFINE  Set_Num1_D     BSF    LCD1_map,0
-#DEFINE  Set_Num1_A     BSF    LCD1_map,0
-#DEFINE  Set_Num1_B     BSF    LCD1_map,0
-#DEFINE  Set_Num1_C     BSF    LCD1_map,0
+#DEFINE  Set_DOT_S1		BSF    LCD1_map,BIT5
+#DEFINE  Set_DOT_TARE	BSF    LCD1_map,BIT6
+#DEFINE  Set_DOT_COL2	BSF    LCD1_map,BIT7
 
-#DEFINE  Set_Num2_F     BSF    LCD2_map,0
-#DEFINE  Set_Num2_G     BSF    LCD2_map,0
-#DEFINE  Set_Num2_E     BSF    LCD2_map,0
-#DEFINE  Set_Num2_D     BSF    LCD2_map,0
-#DEFINE  Set_Num2_A     BSF    LCD2_map,0
-#DEFINE  Set_Num2_B     BSF    LCD2_map,0
-#DEFINE  Set_Num2_C     BSF    LCD2_map,0
-#DEFINE  Set_Num2_P2	BSF    LCD2_map,0
+#DEFINE  Set_DOT_COL1	BSF    LCD2_map,BIT4
+#DEFINE  Set_Num1_B     BSF    LCD2_map,BIT5
+#DEFINE  Set_Num1_C     BSF    LCD2_map,BIT6
 
-#DEFINE  Set_Num3_F     BSF    LCD3_map,0
-#DEFINE  Set_Num3_G     BSF    LCD3_map,0
-#DEFINE  Set_Num3_E     BSF    LCD3_map,0
-#DEFINE  Set_Num3_D     BSF    LCD3_map,0
-#DEFINE  Set_Num3_A     BSF    LCD3_map,0
-#DEFINE  Set_Num3_B     BSF    LCD3_map,0
-#DEFINE  Set_Num3_C     BSF    LCD3_map,0
-#DEFINE  Set_Num3_P3    BSF    LCD3_map,0
 
-#DEFINE  Set_Num4_F     BSF    LCD4_map,0
-#DEFINE  Set_Num4_G     BSF    LCD4_map,0
-#DEFINE  Set_Num4_E     BSF    LCD4_map,0
-#DEFINE  Set_Num4_D     BSF    LCD4_map,0
-#DEFINE  Set_Num4_A     BSF    LCD4_map,0
-#DEFINE  Set_Num4_B     BSF    LCD4_map,0
-#DEFINE  Set_Num4_C     BSF    LCD4_map,0
-#DEFINE  Set_Num4_P4    BSF    LCD4_map,0
+#DEFINE  Set_Num2_F     BSF    LCD3_map,BIT0
+#DEFINE  Set_Num2_G     BSF    LCD3_map,BIT1
+#DEFINE  Set_Num2_E     BSF    LCD3_map,BIT2
+#DEFINE  Set_Num2_D     BSF    LCD3_map,BIT3
+#DEFINE  Set_Num2_A     BSF    LCD3_map,BIT4
+#DEFINE  Set_Num2_B     BSF    LCD3_map,BIT5
+#DEFINE  Set_Num2_C     BSF    LCD3_map,BIT6
+#DEFINE  Set_Num2_P2	BSF    LCD3_map,BIT7
 
-#DEFINE  Set_Num5_F     BSF    LCD5_map,0
-#DEFINE  Set_Num5_G     BSF    LCD5_map,0
-#DEFINE  Set_Num5_E     BSF    LCD5_map,0
-#DEFINE  Set_Num5_D     BSF    LCD5_map,0
-#DEFINE  Set_Num5_A     BSF    LCD5_map,0
-#DEFINE  Set_Num5_B     BSF    LCD5_map,0
-#DEFINE  Set_Num5_C     BSF    LCD5_map,0
-#DEFINE  Set_Num5_ML    BSF    LCD5_map,0
-
-#DEFINE  Set_DOT_LB		BSF    LCD6_map,0
-#DEFINE  Set_DOT_G		BSF    LCD6_map,0
-#DEFINE  Set_DOT_FL		BSF    LCD6_map,0
-#DEFINE  Set_DOT_OZ		BSF    LCD6_map,0
-#DEFINE  Set_DOT_COL1	BSF    LCD6_map,0
-#DEFINE  Set_DOT_S1		BSF    LCD6_map,0
-#DEFINE  Set_DOT_TARE	BSF    LCD6_map,0
-#DEFINE  Set_DOT_COL2	BSF    LCD6_map,0
+#DEFINE  Set_Num3_F     BSF    LCD4_map,BIT0
+#DEFINE  Set_Num3_G     BSF    LCD4_map,BIT1
+#DEFINE  Set_Num3_E     BSF    LCD4_map,BIT2
+#DEFINE  Set_Num3_D     BSF    LCD4_map,BIT3
+#DEFINE  Set_Num3_A     BSF    LCD4_map,BIT4
+#DEFINE  Set_Num3_B     BSF    LCD4_map,BIT5
+#DEFINE  Set_Num3_C     BSF    LCD4_map,BIT6
+#DEFINE  Set_Num3_P3    BSF    LCD4_map,BIT7
+                                     
+#DEFINE  Set_Num4_F     BSF    LCD5_map,BIT0
+#DEFINE  Set_Num4_G     BSF    LCD5_map,BIT1
+#DEFINE  Set_Num4_E     BSF    LCD5_map,BIT2
+#DEFINE  Set_Num4_D     BSF    LCD5_map,BIT3
+#DEFINE  Set_Num4_A     BSF    LCD5_map,BIT4
+#DEFINE  Set_Num4_B     BSF    LCD5_map,BIT5
+#DEFINE  Set_Num4_C     BSF    LCD5_map,BIT6
+#DEFINE  Set_Num4_P4    BSF    LCD5_map,BIT7
+                                     
+#DEFINE  Set_Num5_F     BSF    LCD6_map,BIT0
+#DEFINE  Set_Num5_G     BSF    LCD6_map,BIT1
+#DEFINE  Set_Num5_E     BSF    LCD6_map,BIT2
+#DEFINE  Set_Num5_D     BSF    LCD6_map,BIT3
+#DEFINE  Set_Num5_A     BSF    LCD6_map,BIT4
+#DEFINE  Set_Num5_B     BSF    LCD6_map,BIT5
+#DEFINE  Set_Num5_C     BSF    LCD6_map,BIT6
+#DEFINE  Set_Num5_ML    BSF    LCD6_map,BIT7
+                                     
 
 ;=======================================================
 ;==== 用户显示区
@@ -280,9 +286,6 @@ Fun_LCD_USER_Num:
     GOTO		Fun_LCD_USER_Num_1
     MOVLW		Disp_No
     MOVWF		TempRam4
-    
-    BTFSS		ScaleFlow,B_ScaleFlow_CAL
-    GOTO		Fun_LCD_USER_Num_1
     
     MOVLW		00H
     XORWF		TempRam5, W

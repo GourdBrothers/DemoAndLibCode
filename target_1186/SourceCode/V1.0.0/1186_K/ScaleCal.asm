@@ -162,7 +162,7 @@ ScaleCal_PASS:
 	CLRF	CountL
 ;
 	CLRF	ScaleUnit
-	BSF		ScaleUnit,B_ScaleUnit_KG
+	BSF		ScaleUnit,B_ScaleUnit_G
 ;
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_WEIGHT

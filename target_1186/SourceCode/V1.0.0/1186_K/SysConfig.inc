@@ -57,8 +57,8 @@
 ;**** 程序功能模块对应的参数定义
 ;*********************************************
 ;--- 上电默认单位
-    DEFAULT_UNIT		EQU  B_ScaleUnit_KG
-    UNIT_MAX			EQU	 08H
+    DEFAULT_UNIT		EQU  B_ScaleUnit_G
+    UNIT_MAX			EQU	 020H
     
 ;--- 重量处理相关系数
 	COUNT_DIVIDE		EQU	  2		; 只能在1，2，3中选择,1 为1点称重(标定)
@@ -67,13 +67,16 @@
 	CAL_COUNT_1			EQU		2000
 	CAL_COUNT_2			EQU		5000
 	CAL_COUNT_3			EQU		8000
-	START_COUNT			EQU		16
+	START_COUNT			EQU		18
 	MEM_COUNT			EQU		7
 	MIN_DISP_COUNT		EQU		2
 	MAX_COUNT			EQU		5101
 	TARE_COUNT			EQU		100
 	OUTZ_COUNT			EQU		1000
 	TRACK_ZERO_CNT		EQU		3
+	
+	TARE_MODE			EQU		1	; 1, ADC稳定时去皮; 2, 立即去皮; 3, 延时去皮
+	TARE_DELAY_CNT		EQU		3   ; N * [ADC Filter OUTPUT TIME]
 
 ;--- ADC 滤波系数
 	PRO_ADC_WINDOWN		EQU		10

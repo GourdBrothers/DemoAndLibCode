@@ -34,16 +34,16 @@ ScaleMain_Key:
 ScaleMain_Key_END:
 
 ScaleMain_AutoOff:
-	BTFSS	ScaleFlow,B_ScaleFlow_WEIGHT
-	GOTO	ScaleMain_AutoOff_END
-	BTFSS	ScaleFlag2,B_ScaleFlag2_0s5_B
-	GOTO	ScaleMain_AutoOff_END
-	INCF	TimerAutoOff,F
-	MOVLW	20
-	SUBWF	TimerAutoOff,W
-	BTFSS	STATUS,Z
-	GOTO	ScaleMain_AutoOff_END
-	BSF		ScaleFlag2,B_ScaleFlag2_FastSleep
+;	BTFSS	ScaleFlow,B_ScaleFlow_WEIGHT
+;	GOTO	ScaleMain_AutoOff_END
+;	BTFSS	ScaleFlag2,B_ScaleFlag2_0s5_B
+;	GOTO	ScaleMain_AutoOff_END
+;	INCF	TimerAutoOff,F
+;	MOVLW	20
+;	SUBWF	TimerAutoOff,W
+;	BTFSS	STATUS,Z
+;	GOTO	ScaleMain_AutoOff_END
+;	BSF		ScaleFlag2,B_ScaleFlag2_FastSleep
 ScaleMain_AutoOff_END:
 
 ScaleMain_ADC:
@@ -73,11 +73,6 @@ ScaleMain_Init:
 ;--- NEXT FLOW
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_ZERO
-	BTFSS	SysFlag1,B_SysFlag1_WakeUp
-	GOTO	ScaleMain_Init_END
-	CLRF	ScaleFlow
-	BSF		ScaleFlow,B_ScaleFlow_WEIGHT
-	BSF		SysFlag1,B_SysFlag1_OnWeight
 ScaleMain_Init_END:
 	GOTO	ScaleMain_Flow_END
 

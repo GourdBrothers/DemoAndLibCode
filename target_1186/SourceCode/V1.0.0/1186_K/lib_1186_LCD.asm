@@ -8,8 +8,6 @@
 * @copyright
 */
 
-;	INCLUDE		"SysConfig.INC"
-	
 ; DEFINE 	
 	SEG_F       EQU       10000000B
     SEG_G       EQU       01000000B
