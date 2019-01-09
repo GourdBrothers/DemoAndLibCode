@@ -8,10 +8,13 @@
 */
 
 Scale_Weight_ENTRY:
+	BTFSC	ScaleFlag3,B_ScaleFlag3_UnitChang
+	GOTO	Scale_W_GetCount
 	BTFSS	ScaleFlag1,B_ScaleFlag1_AdcOk
 	GOTO	Scale_Weight_EXIT
 	
 Scale_W_GetCount:
+	BCF		ScaleFlag3,B_ScaleFlag3_UnitChang
 	CALL	Fun_GetCount
 
 Scale_W_StartCount:
@@ -38,7 +41,6 @@ Scale_W_UpStartCount:
 Scale_W_ClrTrackCnt:
 	CLRF	ZeroTrackCnt
 Scale_W_StartCount_END:
-
 
 Scale_W_Mem:
 Scale_W_Mem_Update:
@@ -75,21 +77,19 @@ Scale_W_MinDisp:
 Scale_W_MinDisp_END:
 
 Scale_W_MaxCount:
+	CALL	Fun_ChkMaxDispCount
 Scale_W_MaxCount_END:
 
 Scale_W_RefreshOffTimer:
+	CALL	Fun_CountRefreshOffTime
 Scale_W_RefreshOffTimer_END:
 
-;	BCF		ScaleFlag3,B_ScaleFlag3_DispZero
-;	MOVLW	LOW		MIN_DISP_COUNT
-;	SUBWF	CountL,W
-;	MOVLW	HIGH	MIN_DISP_COUNT
-;	SUBWFC	CountH,W
-;	BTFSC	STATUS,C
-;	GOTO	Scale_W_MinDisp_END
-;	CLRF	CountH
-;	CLRF	CountL
-;	BSF		ScaleFlag3,B_ScaleFlag3_DispZero
+Scale_W_ZeroFlag:
+	CALL	Fun_CountZeroFlag
+Scale_W_ZeroFlag_END:
 
+Scale_W_UnitValue:
+	CALL	Fun_CountUnitChange
+Scale_W_UnitValue_END:
 
 Scale_Weight_EXIT:

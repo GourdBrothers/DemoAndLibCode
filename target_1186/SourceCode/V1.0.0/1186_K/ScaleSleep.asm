@@ -44,6 +44,16 @@ ScaleSleep_cfgADC:
 	CALL	Fun_ADC_Close
 	BCF		SysFlag1,B_SysFlag1_WakeUp
 	
+ScaleSleep_ReleaseKey:	
+	CLRWDT
+	CALL	Fun_Delay_20MS
+	BTFSS	KEY_ON_PORT,KEY_ON_PIN
+	GOTO	ScaleSleep_ReleaseKey
+	CALL	Fun_Delay_20MS
+	BTFSS	KEY_ON_PORT,KEY_ON_PIN
+	GOTO	ScaleSleep_ReleaseKey
+	CLRF	WDTCON
+	
 ScaleSleep_cfgInt:
 	BSF		PTINT,PTW0_1
 	BSF		INTE,E0IE
@@ -55,11 +65,9 @@ ScaleSleep_done:
 	
 ScaleWakeUp_INT:
 	BTFSS	SysFlag1,B_SysFlag1_WakeUp
-	GOTO	ScaleSleep_cfgADC
+	GOTO	ScaleSleep_cfgInt
 
 ScaleWakeUp_Done:
-;	BCF		INTE,ADIE
-;	BCF		INTE,GIE
 	CLRF	INTE
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_Init

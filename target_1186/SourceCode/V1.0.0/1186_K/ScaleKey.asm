@@ -21,18 +21,28 @@ Scale_KEY_ENTRY:
 
 ;--- 短按检测
 Scale_KEY_Short:
+	BTFSC	Key_TRG,B_KEY_ON
+	GOTO	Scale_KEY_Short_OnOff
 	BTFSC	Key_TRG,B_KEY_UNIT
 	GOTO	Scale_KEY_Short_UNIT
 	GOTO	Scale_KEY_Long
 	
+;- 开关机键单击
+Scale_KEY_Short_OnOff:
+	BTFSC	ScaleFlow,B_ScaleFlow_WEIGHT
+	CALL	Fun_TareTrg
+Scale_KEY_Short_OnOff_END:
+	GOTO	Scale_KEY_Short_END
+	
 ;- 单位键单击
 Scale_KEY_Short_UNIT:
+;
 	BTFSC	ScaleFlow,B_ScaleFlow_CAL
 	BSF		ScaleFlag3,B_ScaleFlag3_CalTrg
-	
+;
 	BTFSC	ScaleFlow,B_ScaleFlow_ZERO
 	INCF	KeyShortCnt,F
-	
+; 单位切换
 	BTFSS	ScaleFlow,B_ScaleFlow_WEIGHT
 	GOTO	Scale_KEY_Short_UNIT_END
 	BCF		STATUS,C
@@ -40,14 +50,17 @@ Scale_KEY_Short_UNIT:
 	MOVLW	UNIT_MAX
 	SUBWF	ScaleUnit,W
 	BTFSS	STATUS,C
-	GOTO	Scale_KEY_Short_UNIT_END
+	GOTO	Scale_KEY_Short_UNIT0
 	CLRF	ScaleUnit
 	BSF		ScaleUnit,B_ScaleUnit_G
+Scale_KEY_Short_UNIT0:
+	CALL	Fun_user_UnitChange
+	BSF		ScaleFlag3,B_ScaleFlag3_UnitChang
 Scale_KEY_Short_UNIT_END:
 
+Scale_KEY_Short_END:
 	CLRF	Key_Timer
 	CALL	Fun_User_RefreshOffTimer
-Scale_KEY_Short_END:
 	GOTO	Scale_KEY_EXIT
 
 
@@ -64,8 +77,15 @@ Scale_KEY_Long:
 	GOTO	Scale_KEY_Long_END
 	CLRF	Key_Timer
 	
+	BTFSC	Key_HOLD,B_KEY_ON
+	GOTO	Scale_KEY_Long_OnOff
 	BTFSC	Key_HOLD,B_KEY_UNIT
 	GOTO	Scale_KEY_Long_Unit
+	GOTO	Scale_KEY_Long_END
+	
+Scale_KEY_Long_OnOff:
+	BSF		ScaleFlag2,B_ScaleFlag2_FastSleep
+Scale_KEY_Long_OnOff_END:
 	GOTO	Scale_KEY_Long_END
 	
 ;-- 单位键长按

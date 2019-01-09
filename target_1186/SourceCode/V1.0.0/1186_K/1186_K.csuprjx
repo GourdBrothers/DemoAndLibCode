@@ -321,12 +321,6 @@
 				</Properties>
 			</File>
 			<File>
-				FilePath=".\\lib_1186_timer.asm"
-				Flags="0x000004CF"
-				<Properties>
-				</Properties>
-			</File>
-			<File>
 				FilePath=".\\lib_1186_utiliy.asm"
 				Flags="0x000004CF"
 				<Properties>

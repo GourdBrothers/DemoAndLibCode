@@ -29,7 +29,6 @@ ASM_FILES			  = "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\Sys_
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_ISR.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_LCD.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_OTP_WR.asm" \
-"G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_timer.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_utiliy.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_adc.asm" \
 "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_bat.asm" \
@@ -44,7 +43,6 @@ OBJ_FILES			  = "$(INTERTMP_DIR)\Sys_Main.obj" \
 "$(INTERTMP_DIR)\lib_1186_ISR.obj" \
 "$(INTERTMP_DIR)\lib_1186_LCD.obj" \
 "$(INTERTMP_DIR)\lib_1186_OTP_WR.obj" \
-"$(INTERTMP_DIR)\lib_1186_timer.obj" \
 "$(INTERTMP_DIR)\lib_1186_utiliy.obj" \
 "$(INTERTMP_DIR)\lib_adc.obj" \
 "$(INTERTMP_DIR)\lib_bat.obj" \
@@ -87,9 +85,6 @@ OUTPUT_OTHER_FILES	  = "$(INTERTMP_DIR)\*.asm" \
 	$(ECHO)
 "$(INTERTMP_DIR)\lib_1186_OTP_WR.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_OTP_WR.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_OTP_WR.asm" -o "$(INTERTMP_DIR)\lib_1186_OTP_WR.obj" 
-	$(ECHO)
-"$(INTERTMP_DIR)\lib_1186_timer.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_timer.asm"
-	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_timer.asm" -o "$(INTERTMP_DIR)\lib_1186_timer.obj" 
 	$(ECHO)
 "$(INTERTMP_DIR)\lib_1186_utiliy.obj" : "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_utiliy.asm"
 	$(ASM) $(ASMFLAGS) -gstab "G:\Git\DemoAndLibCode\target_1186\SourceCode\V1.0.0\1186_K\lib_1186_utiliy.asm" -o "$(INTERTMP_DIR)\lib_1186_utiliy.obj" 

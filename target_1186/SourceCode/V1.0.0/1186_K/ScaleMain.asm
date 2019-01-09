@@ -70,6 +70,7 @@ ScaleMain_Init:
 	INCLUDE "ScaleInit.ASM"
 	CALL	Fun_user_KeyGetGPIO
 	CALL	Fun_key_Scan
+	CALL	Fun_user_UnitChange
 ;--- NEXT FLOW
 	CLRF	ScaleFlow
 	BSF		ScaleFlow,B_ScaleFlow_ZERO

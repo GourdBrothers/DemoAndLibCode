@@ -38,10 +38,10 @@ Sys_PowerOn_ClrBank1:
     CALL    Fun_RAM_Zero
 Sys_PowerOn_ClrBank1_Loop:
 
-Sys_PowerOn_WDT:
-	MOVLW	WDTCON_CFG_VALUE
-	MOVWF	WDTCON
-	CLRWDT
+;Sys_PowerOn_WDT:
+;	MOVLW	WDTCON_CFG_VALUE
+;	MOVWF	WDTCON
+;	CLRWDT
 	
 Sys_PowerOn_Default:
 	BSF		ScaleUnit,DEFAULT_UNIT

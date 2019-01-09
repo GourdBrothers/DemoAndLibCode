@@ -134,6 +134,8 @@ USER_LCD_RAM	.section	BANK0
 
 	; Display7	   DS  1
 	
+	DisplayPoint	DS	1
+	
 .ENDS
 
 XCWK_Math_ROM .section rom
@@ -265,55 +267,64 @@ Fun_LCD_USER_SetBits_END:
 	GOTO	Fun_LCD_Load_REG
 	
 Fun_LCD_USER_Num:
-	
-	MOVLW		00H
-    XORWF		TempRam2, W
-    BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
-    MOVLW		Disp_No
-    MOVWF		TempRam2
 
-    MOVLW		00H
-    XORWF		TempRam3, W
-    BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
-    MOVLW		Disp_No
-    MOVWF		TempRam3
+	MOVLW	00H
+    XORWF	TempRam2, W
+    BTFSS	STATUS, Z
+    GOTO	Fun_LCD_USER_Num_1
+    MOVLW	Disp_No
+    MOVWF	TempRam2
     
-    MOVLW		00H
-    XORWF		TempRam4, W
-    BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
-    MOVLW		Disp_No
-    MOVWF		TempRam4
+    BTFSC	DisplayPoint,2
+    GOTO	Fun_LCD_USER_Num_1
+
+    MOVLW	00H
+    XORWF	TempRam3, W
+    BTFSS	STATUS, Z
+    GOTO	Fun_LCD_USER_Num_1
+    MOVLW	Disp_No
+    MOVWF	TempRam3
     
-    MOVLW		00H
-    XORWF		TempRam5, W
-    BTFSS		STATUS, Z
-    GOTO		Fun_LCD_USER_Num_1
-    MOVLW		Disp_No
-    MOVWF		TempRam5
+    BTFSC	DisplayPoint,1
+    GOTO	Fun_LCD_USER_Num_1
+    
+    MOVLW	00H
+    XORWF	TempRam4, W
+    BTFSS	STATUS, Z
+    GOTO	Fun_LCD_USER_Num_1
+    MOVLW	Disp_No
+    MOVWF	TempRam4
+    
+    BTFSC	DisplayPoint,0
+    GOTO	Fun_LCD_USER_Num_1
+    
+    MOVLW	00H
+    XORWF	TempRam5, W
+    BTFSS	STATUS, Z
+    GOTO	Fun_LCD_USER_Num_1
+    MOVLW	Disp_No
+    MOVWF	TempRam5
     
 Fun_LCD_USER_Num_1:
-    MOVFW		TempRam2
-    CALL		Table_Lcd_Num
-    IORWF		Display1,F
+    MOVFW	TempRam2
+    CALL	Table_Lcd_Num
+    IORWF	Display1,F
     
-    MOVFW		TempRam3
-    CALL		Table_Lcd_Num
-    IORWF		Display2,F
+    MOVFW	TempRam3
+    CALL	Table_Lcd_Num
+    IORWF	Display2,F
 
-    MOVFW		TempRam4
-    CALL		Table_Lcd_Num
-    IORWF		Display3,F
+    MOVFW	TempRam4
+    CALL	Table_Lcd_Num
+    IORWF	Display3,F
 
-    MOVFW		TempRam5
-    CALL		Table_Lcd_Num
-    IORWF		Display4,F
+    MOVFW	TempRam5
+    CALL	Table_Lcd_Num
+    IORWF	Display4,F
 
-    MOVFW		TempRam6
-    CALL		Table_Lcd_Num
-    IORWF		Display5,F
+    MOVFW	TempRam6
+    CALL	Table_Lcd_Num
+    IORWF	Display5,F
     
  RETURN
  

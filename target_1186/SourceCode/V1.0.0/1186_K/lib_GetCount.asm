@@ -43,6 +43,9 @@ lib_GetCount_RAM .section BANK0
   		B_TareFlag_ON   EQU	1
   	TareCountH			DS	1
   	TareCountL			DS	1
+  	
+  	LastCountH			DS	1
+  	LastCountL			DS	1
 
 .ends
 
@@ -50,6 +53,15 @@ lib_GetCount_RAM .section BANK0
 lib_GetCount_ROM .section ROM
 
 Fun_GetCount:
+
+.IF		COUNT_DIVIDE==0
+		.ERROR "COUNT_DIVIDE < 1,Please check COUNT_DIVIDE in SysConfig.inc!"
+.ENDIF
+
+.IF		COUNT_DIVIDE>3
+		.ERROR "COUNT_DIVIDE > 3,please check COUNT_DIVIDE in SysConfig.inc!"
+.ENDIF
+
 		CALL		Fun_CurAD_Sub_ZeroAD
 
     ;--- 当前ADC与零点内码差
@@ -67,18 +79,14 @@ Fun_GetCount:
 		MOVLW		00H
 		ADDWFC		REG0,F
 	;--- 判断内码所处的区间位置
-.IF		COUNT_DIVIDE==0
-		.ERROR "COUNT_DIVIDE < 1,Please check COUNT_DIVIDE in SysConfig.inc!"
-.ENDIF
 
-.IF		COUNT_DIVIDE>3
-		.ERROR "COUNT_DIVIDE > 3,please check COUNT_DIVIDE in SysConfig.inc!"
-.ENDIF
-	
-IF		COUNT_DIVIDE==1
+;---    COUNT_DIVIDE == 1
+		MOVFL		TempRam3,COUNT_DIVIDE
+		MOVLW		01H
+		XORWF		TempRam3,W
+		BTFSC		STATUS,Z
 		GOTO		GetCount1
-ENDIF
-
+;--	
 		MOVFW		CalDot1L
 		SUBWF		REG2,W
 		MOVFW		CalDot1M
@@ -88,9 +96,13 @@ ENDIF
 		BTFSS		STATUS,C
 		GOTO		GetCount1
 		
-IF		COUNT_DIVIDE==2
+;---    COUNT_DIVIDE==2
+		MOVFL		TempRam3,COUNT_DIVIDE
+		MOVLW		02H
+		XORWF		TempRam3,W
+		BTFSC		STATUS,Z
 		GOTO		GetCount2
-ENDIF
+;--		COUNT_DIVIDE==3
 
 		MOVFW		CalDot2L
 		SUBWF		REG2,W
@@ -317,17 +329,117 @@ Fun_Tare_ON_0:
 		MOVFF		CountH,TempRam3
 		MOVFF		CountL,TempRam4
 Fun_Tare_END:
+		BCF			ScaleFlag1,B_ScaleFlag1_TARE
+		BTFSC		TareFlag,B_TareFlag_ON
+		BSF			ScaleFlag1,B_ScaleFlag1_TARE
 RETURN
 
 Fun_ChkMinDispCount:
-	BCF		ScaleFlag1,B_ScaleFlag1_Zero
-	MOVLW	MIN_DISP_COUNT
-    SUBWF	CountL,W
-    MOVLW	00H
-    SUBWFC	CountH,W
-    BTFSS	STATUS,C
-	GOTO	Fun_SetCountZero
-Fun_ChkMinDispCountEnd:
+		BCF			ScaleFlag1,B_ScaleFlag1_Zero
+		MOVLW		MIN_DISP_COUNT
+    	SUBWF		CountL,W
+    	MOVLW		00H
+    	SUBWFC		CountH,W
+    	BTFSS		STATUS,C
+		GOTO		Fun_SetCountZero
+Fun_ChkMinDispCountEND:
+RETURN
+
+Fun_ChkMaxDispCount:
+		BCF			ScaleFlag1,B_ScaleFlag1_oL
+		BTFSC		ScaleFlag1,B_ScaleFlag1_Neg
+		GOTO		Fun_ChkMaxDispCountNeg
+Fun_ChkMaxDispCountPos:		
+		MOVFF		TempRam5,TareCountH
+		MOVFF		TempRam6,TareCountL
+		MOVFW		CountL
+		ADDWF		TempRam6,F
+		MOVFW		CountH
+		ADDWFC		TempRam5,F
+		MOVLW		LOW		MAX_COUNT
+		SUBWF		TempRam6,W
+		MOVLW		HIGH	MAX_COUNT
+		SUBWFC		TempRam5,W
+		BTFSS		STATUS,C
+		GOTO		Fun_ChkMaxDispCountEND
+		GOTO		Fun_IsMaxDispCount
+Fun_ChkMaxDispCountNeg:	
+		MOVFL		TempRam5,HIGH	MAX_COUNT
+		MOVFL		TempRam6,LOW	MAX_COUNT
+		MOVFW		TareCountL
+		ADDWF		TempRam6,F
+		MOVFW		TareCountH
+		ADDWFC		TempRam5,F
+		MOVFW		TempRam6
+		SUBWF		CountL,W
+		MOVFW		TempRam5
+		SUBWFC		CountH,W
+		BTFSS		STATUS,C
+		GOTO		Fun_ChkMaxDispCountEND
+Fun_IsMaxDispCount:		
+		BSF			ScaleFlag1,B_ScaleFlag1_oL
+Fun_ChkMaxDispCountEND:
+RETURN
+
+Fun_CountRefreshOffTime:
+		MOVFF		TempRam5,LastCountH
+		MOVFF		TempRam6,LastCountL
+		MOVFW		CountH
+		MOVWF		TempRam3
+		MOVWF		LastCountH
+		MOVFW		CountL
+		MOVWF		TempRam4
+		MOVWF		LastCountL
+		CALL		Fun_Math_Sub2_2
+		CALL		Fun_Math_Sub2_2_Neg
+		CLRF		TempRam5
+		MOVFL		TempRam6,REFRESH_COUNT
+		CALL		Fun_Math_Sub2_2
+		BTFSC		STATUS,C
+		GOTO		Fun_User_RefreshOffTimer
+Fun_CountRefreshOffTime_END:
+RETURN
+
+Fun_CountZeroFlag:
+		MOVLW		LOW		TARE_COUNT
+		SUBWF		TareCountL,W
+		MOVLW		HIGH	TARE_COUNT         
+		SUBWFC		TareCountH,W
+    	BTFSC		STATUS,C
+    	BCF			ScaleFlag1,B_ScaleFlag1_Zero
+    ;	
+    	BCF			ScaleFlag3,B_ScaleFlag3_DispZero
+    	MOVLW		00H
+    	XORWF		CountL,W
+    	BTFSS		STATUS,Z
+    	GOTO		Fun_CountZeroFlag_END
+    	MOVLW		00H
+    	XORWF		CountH,W
+    	BTFSC		STATUS,Z
+    	BSF			ScaleFlag3,B_ScaleFlag3_DispZero
+Fun_CountZeroFlag_END: 	
+RETURN
+
+Fun_CountUnitChange:
+		CLRF		TempRam11
+		MOVFF		TempRam12,CountH
+		MOVFF		TempRam13,CountL
+		MOVFF		TempRam4,Unit_CH
+		MOVFF		TempRam5,Unit_CM
+		MOVFF		TempRam6,Unit_CL
+		CALL		Fun_Math_Mul3_3
+		MOVFL		TempRam11,010H
+		CLRF		TempRam12
+		CLRF		TempRam13
+		CALL		Fun_Math_Div6_3
+		;CALL		Fun_Math_Div6_3_Rounded
+		CLRF		TempRam11
+		CLRF		TempRam12
+		MOVFF		TempRam13,Unit_MIN
+		CALL		Fun_Math_Mul3_3
+		MOVFF		CountH,TempRam5
+		MOVFF		CountL,TempRam6
+Fun_CountUnitChangeEND:
 RETURN
 
 .ends
